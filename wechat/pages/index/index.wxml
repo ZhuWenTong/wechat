@@ -1,0 +1,22 @@
+<view class="content">
+    <swiper autoplay indicator-dots indicator-color='#fff' indicator-active-color='#333' circular interval='3000' bindchange='swiper'>
+        <block wx:for="{{7}}" wx:key="">
+            <swiper-item>
+                {{item}}
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="tabs">
+        <text bindtap='tabTap' data-current='0' class='{{current  == 0 ? "selected" : ""}}'>1</text>
+        <text bindtap='tabTap' data-current='1' class='{{current  == 1 ? "selected" : ""}}'>2</text>
+        <text bindtap='tabTap' data-current='2' class='{{current  == 2 ? "selected" : ""}}'>3</text>
+        <text bindtap='tabTap' data-current='3' class='{{current  == 3 ? "selected" : ""}}'>4</text>
+    </view>
+    <swiper class="tabs-content" bindchange="tabsChange" current="{{current}}" autoplay interval="3000" circular>
+        <block wx:for="{{4}}" wx:key="">
+            <swiper-item>
+                {{item + 1}}
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

@@ -1,0 +1,7 @@
+page{
+    background: #eee;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
