@@ -1,9 +1,14 @@
 {
     "pages":[
-        "pages/index/index"
+        "pages/map/map",
+        "pages/index/index",
+        "pages/scroll/scroll",
+        "pages/form/form",
+        
+        "pages/template/template"
     ],
     "window": {
-      "navigationBarBackgroundColor": "#24292e",
+      "navigationBarBackgroundColor": "#20A0FF",
       "navigationBarTextStyle": "white",
       "backgroundColor": "#eeeeee",
       "backgroundTextStyle": "light",

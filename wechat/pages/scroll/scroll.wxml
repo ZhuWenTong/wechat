@@ -1,0 +1,14 @@
+<view class="content">
+    <scroll-view scroll-x>
+        <view class="x">
+            <view class="box">1</view>
+            <view class="box box1">2</view>
+        </view>
+    </scroll-view>
+    <scroll-view scroll-y>
+        <view class="y">
+            <view class="box2">3</view>
+            <view class="box3">4</view>
+        </view>
+    </scroll-view>
+</view>

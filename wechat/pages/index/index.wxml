@@ -13,10 +13,12 @@
         <text bindtap='tabTap' data-current='3' class='{{current  == 3 ? "selected" : ""}}'>4</text>
     </view>
     <swiper class="tabs-content" bindchange="tabsChange" current="{{current}}" autoplay interval="3000" circular>
-        <block wx:for="{{4}}" wx:key="">
-            <swiper-item>
-                {{item + 1}}
-            </swiper-item>
+        <block wx:for="{{wxdemo}}" wx:key="">
+            <view bindtap='swiperTap' data-swiper-index='{{item.index}}'>
+                <swiper-item>
+                    {{item.demo}}
+                </swiper-item>
+            </view>
         </block>
     </swiper>
 </view>

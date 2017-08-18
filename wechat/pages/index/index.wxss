@@ -9,10 +9,10 @@ swiper-item{
     color:#fff;
 }
 swiper-item:nth-of-type(2n){
-    background: #cc0;
+    background: #13CE66;
 }
 swiper-item:nth-of-type(2n+1){
-    background: #0cc;
+    background: #F7BA2A;
 }
 
 .tabs{
@@ -46,10 +46,10 @@ swiper-item:nth-of-type(2n+1){
     background: red;
 }
 
-.tabs-content swiper-item:nth-of-type(2n){
-    background: #a8f;
+.tabs-content view:nth-of-type(2n) swiper-item{
+    background: #1D8CE0;
 }
 
-.tabs-content swiper-item:nth-of-type(2n + 1){
-    background: #fa8;
+.tabs-content view:nth-of-type(2n+1) swiper-item{
+    background: #FF4949;
 }

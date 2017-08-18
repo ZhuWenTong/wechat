@@ -1,0 +1,52 @@
+scroll-view{
+    max-width: 100%;
+}
+
+.x{
+    width:1600rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    width:800rpx;
+    height:400rpx;
+    background: #13CE66;
+}
+
+.box1{
+    background:#FF4949;
+}
+
+/*去除滚动条*/
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+scroll-view:nth-of-type(2){
+    max-height: 600rpx;
+    margin-top: 40rpx;
+}
+
+.box2{
+    width:800rpx;
+    height:600rpx;
+    background:#F7BA2A;
+}
+
+.box3{
+    width:800rpx;
+    height:600rpx;
+    background:#1D8CE0;
+}
+
+.x view,
+.y view{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
