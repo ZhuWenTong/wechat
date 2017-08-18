@@ -1,2 +1,4 @@
-<!--pages/template/template.wxml-->
-<text>pages/template/template.wxml</text>
+<import src='../templates/common/common-template.wxml' />
+<view class="content">
+    <template is="commonTemplate" data='{{common}}'/>
+</view>

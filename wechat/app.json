@@ -1,11 +1,10 @@
 {
     "pages":[
-        
+        "pages/template/template",
         "pages/index/index",
         "pages/scroll/scroll",
         "pages/form/form",
-        "pages/map/map",
-        "pages/template/template"
+        "pages/map/map"
     ],
     "window": {
       "navigationBarBackgroundColor": "#20A0FF",
