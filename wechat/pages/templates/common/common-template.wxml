@@ -1,5 +1,5 @@
 <template name="commonTemplate">
     <view class="common">
-        <text>{{common}}</text>
+        <text>{{name}}</text>
     </view>
 </template>

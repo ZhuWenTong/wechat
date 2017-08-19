@@ -1,4 +1,8 @@
 <import src='../templates/common/common-template.wxml' />
 <view class="content">
-    <template is="commonTemplate" data='{{common}}'/>
+    <block wx:for='{{common}}' wx:key=''>
+        <view class="template" data-code='{{item.code}}' bindtap='templateTap'>
+            <template is="commonTemplate" data='{{...item}}'/>
+        </view>
+    </block>
 </view>

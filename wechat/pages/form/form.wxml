@@ -1,2 +1,3 @@
-<!--pages/form/form.wxml-->
-<text>pages/form/form.wxml</text>
+<view class="content">
+    <input type="text" />
+</view>
