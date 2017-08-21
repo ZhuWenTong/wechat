@@ -1,3 +1,6 @@
 <view class="content">
-    <input type="text" />
+    <view class="int">
+        <icon type="search" />
+        <input type="text" placeholder="输入" placeholder-class="placehold" bindinput="inputting" bindblur="onBlur" bindconfirm="inputed"/>
+    </view>
 </view>

@@ -1,9 +1,9 @@
 {
     "pages":[
-        
+        "pages/form/form",
         "pages/index/index",
         "pages/scroll/scroll",
-        "pages/form/form",
+        
         "pages/map/map",
         "pages/template/template"
     ],
