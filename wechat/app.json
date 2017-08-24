@@ -20,16 +20,22 @@
     "tabBar": {
       "list": [{
           "pagePath": "pages/index/index",
-          "text": "index"
+          "text": "index",
+          "iconPath": "/images/index0.png",
+          "selectedIconPath": "/images/index.png"
       },{
         "pagePath": "pages/tabbar/show/show",
-        "text": "show"
+        "text": "show",
+        "iconPath": "/images/show0.png",
+        "selectedIconPath": "/images/show.png"
       },{
           "pagePath":"pages/tabbar/info/info",
-          "text": "info"
+          "text": "info",
+        "iconPath": "/images/info0.png",
+        "selectedIconPath": "/images/info.png"
       }],
       "borderStyle": "white",
-      "selectedColor": "#20a0ff",
+      "selectedColor": "#1296db",
       "backgroundColor": "#324057",
       "color": "#fff"
     }
