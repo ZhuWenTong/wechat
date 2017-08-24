@@ -5,6 +5,9 @@
         "pages/scroll/scroll",
         "pages/form/form",
         "pages/map/map",
+        "pages/tabbar/tabbar",
+        "pages/tabbar/show/show",
+        "pages/tabbar/info/info",
         "pages/template/template"
     ],
     "window": {
@@ -13,5 +16,21 @@
       "backgroundColor": "#eeeeee",
       "backgroundTextStyle": "light",
       "enablePullDownRefresh": false
+    },
+    "tabBar": {
+      "list": [{
+          "pagePath": "pages/index/index",
+          "text": "index"
+      },{
+        "pagePath": "pages/tabbar/show/show",
+        "text": "show"
+      },{
+          "pagePath":"pages/tabbar/info/info",
+          "text": "info"
+      }],
+      "borderStyle": "white",
+      "selectedColor": "#20a0ff",
+      "backgroundColor": "#324057",
+      "color": "#fff"
     }
 }

@@ -1,24 +1,25 @@
 Page({
     data: {
         current: 0,
-        wxdemo: [
-            {
-                demo: 'scroll-view',
-                index: 0
-            },
-            {
-                demo: 'form',
-                index: 1
-            },
-            {
-                demo: 'map',
-                index: 2
-            },
-            {
-                demo: 'template',
-                index: 3
-            }
-        ]
+        wxdemo: [{
+            demo: 'scroll-view',
+            index: 0
+        }, {
+            demo: 'form',
+            index: 1
+        }, {
+            demo: 'map',
+            index: 2
+        }, {
+            demo: 'template',
+            index: 3
+        }, {
+            demo: 'tabBar-show',
+            index: 4
+        }, {
+            demo: 'tabBar-info',
+            index: 5
+        }]
     },
     onLoad(options) {
 
@@ -68,7 +69,18 @@ Page({
             case 3:
                 wx.navigateTo({
                     url: '../template/template',
-                })
+                });
+                break;
+            case 4:
+                wx.switchTab({
+                    url: '../tabbar/show/show',
+                });
+                break;
+            case 5:
+                wx.switchTab({
+                    url: '../tabbar/info/info',
+                });
+                break;
         }
     },
     onPullDownRefresh() {

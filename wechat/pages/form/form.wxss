@@ -33,7 +33,8 @@ picker{
 
 .picker,
 .radios,
-.checkboxes{
+.checkboxes,
+.btn{
     margin-top:20rpx;
     width:100%;
     background: #fff;
@@ -62,6 +63,7 @@ checkbox-group{
 }
 
 .btn{
+    padding: 30rpx 0 ;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
