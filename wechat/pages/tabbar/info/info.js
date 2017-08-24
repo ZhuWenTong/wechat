@@ -10,6 +10,14 @@ Page({
                     userInfo: res.userInfo
                 })
             }
+        });
+        wx.getSystemInfo({
+            success: (res) => {
+                //console.log(res)
+                this.setData({
+                    systemInfo: res
+                })
+            }
         })
     },
     onShow() {
