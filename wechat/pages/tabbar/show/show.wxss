@@ -1,0 +1,8 @@
+.btn{
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    padding:20rpx;
+}

@@ -1,0 +1,7 @@
+<view class="content">
+    <view class="btn">
+        <button bindtap="onToastTap">showToast</button>
+        <button bindtap="onLoadTap">showLoading</button>
+        <button bindtap="onModalTap">showModal</button>
+    </view>
+</view>
