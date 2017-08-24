@@ -1,0 +1,16 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content image{
+    width:200rpx;
+    height:200rpx;
+    border-radius: 50%;
+    margin-top:100rpx;
+}
+
+text{
+    margin-top: 40rpx;
+}
