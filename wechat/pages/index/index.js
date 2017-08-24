@@ -49,7 +49,7 @@ Page({
     },
     swiperTap(event) {
         var swiperIndex = event.currentTarget.dataset.swiperIndex;
-        console.log(swiperIndex)
+        //console.log(swiperIndex)
         switch (swiperIndex) {
             case 0:
                 wx.navigateTo({
