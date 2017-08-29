@@ -1,3 +1,4 @@
+var common = require('../../../common/common.js');
 Page({
     data: {
 
@@ -12,12 +13,13 @@ Page({
 
     },
     onToastTap(event){
-        wx.showToast({
-            title: 'toast',
-            mask: true,
-            duration :2000,
-            image: '/images/show0.png'
-        })
+        // wx.showToast({
+        //     title: 'toast',
+        //     mask: true,
+        //     duration :2000,
+        //     image: '/images/show0.png'
+        // })
+        common.toast();
     },
     onLoadTap(event){
         wx.showLoading({
