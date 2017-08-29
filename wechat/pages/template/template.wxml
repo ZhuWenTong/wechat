@@ -5,4 +5,7 @@
             <template is="commonTemplate" data='{{...item}}'/>
         </view>
     </block>
+    <block wx:for='{{iconTypes}}' wx:key=''>
+        <icon type="{{item.type}}" size="{{item.size}}" color="{{item.color}}" />
+    </block>
 </view>
