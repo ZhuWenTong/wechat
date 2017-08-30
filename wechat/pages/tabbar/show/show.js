@@ -19,7 +19,8 @@ Page({
         //     duration :2000,
         //     image: '/images/show0.png'
         // })
-        common.toast();
+        var title = 'demo'
+        common.toast(`toast ${title}`);
     },
     onLoadTap(event){
         wx.showLoading({

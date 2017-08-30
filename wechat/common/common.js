@@ -1,7 +1,7 @@
 const common = {
-    toast(){
+    toast(title){
         wx.showToast({
-            title: 'test',
+            title,
             duration:2000,
             mask:true
         })
