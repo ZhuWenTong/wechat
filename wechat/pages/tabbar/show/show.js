@@ -51,6 +51,40 @@ Page({
             }
         })
     },
+    openPdf(event){
+        wx.downloadFile({
+            url:'http://api.idocv.com/view/KklmYOf',
+            success: (res) => {
+                console.log(res);
+                var filePath = res.tempFilePath;
+                wx.openDocument({
+                    filePath,
+                    fileType:'pdf',
+                    success: (resq) => {
+                        console.log(resq,'打开文档成功')
+                    },
+                    fail: (err) => {
+                        console.log(err)
+                    }
+                })
+            }
+        })
+    },
+    imgInfo(event){
+        wx.getImageInfo({
+            src: '/images/index.png',
+            success: (res) => {
+                console.log(res)
+            }
+        })
+    },
+    chooseImg(event){
+        wx.chooseImage({
+            success: function(res) {
+                console.log(res)
+            },
+        })
+    },
     onPullDownRefresh(){
         console.log('开始下拉刷新');
         wx.showNavigationBarLoading();
