@@ -49,7 +49,7 @@ Page({
             // rect.bottom  // 节点的下边界坐标
             // rect.width   // 节点的宽度
             // rect.height  // 节点的高度
-            console.log(rect);
+            //console.log(rect);
             this.setData({
                 rect
             })
