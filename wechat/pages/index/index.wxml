@@ -32,4 +32,5 @@
             </view>
         </block>
     </view>
+    <view class='box'></view>
 </view>

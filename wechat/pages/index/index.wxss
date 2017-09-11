@@ -53,3 +53,9 @@ swiper-item:nth-of-type(2n+1){
 .tabs-content view:nth-of-type(2n+1) swiper-item{
     background: #FF4949;
 }
+
+.box{
+    width: 200rpx;
+    height: 200rpx;
+    background: linear-gradient(to right,#58B7FF,#20A0FF);
+}
