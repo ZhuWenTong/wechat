@@ -90,4 +90,5 @@ swiper-item:nth-of-type(2n+1){
     font-size: 14px;
     color: #fff;
     line-height: 30px;
+    font-family: '微软雅黑';
 }
