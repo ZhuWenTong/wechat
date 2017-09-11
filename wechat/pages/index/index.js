@@ -121,7 +121,18 @@ Page({
         })
     },
     min(event){
-        
+        var id = event.currentTarget.dataset.id,
+            amount = this.data.amount,
+            result = '';
+        amount.some((i) => {
+            if (i.id == id) {
+                result = i;
+            }
+        })
+        result.num --;
+        this.setData({
+            amount
+        })
     },
     onPullDownRefresh() {
 
