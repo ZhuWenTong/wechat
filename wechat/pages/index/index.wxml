@@ -23,7 +23,7 @@
             </view>
         </block>
     </swiper>
-    <view>
+    <view class='amount'>
         <block wx:for='{{amount}}' wx:key=''>
             <view>
                 <text bindtap='min' data-id='{{item.id}}'>-</text>
