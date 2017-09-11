@@ -107,12 +107,12 @@ Page({
                 break;
             case 4:
                 wx.switchTab({
-                    url: `../tabbar/show/show?title=${title}`,
+                    url: `../tabbar/show/show`,
                 });
                 break;
             case 5:
                 wx.switchTab({
-                    url: `../tabbar/info/info?title=${title}`,
+                    url: `../tabbar/info/info`,//wx.switchTab url不支持queryString
                 });
                 break;
         }
