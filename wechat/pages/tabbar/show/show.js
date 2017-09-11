@@ -3,8 +3,8 @@ Page({
     data: {
 
     },
-    onLoad() {
-
+    onLoad(options) {
+        console.log(options)
     },
     onShow() {
 

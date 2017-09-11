@@ -50,8 +50,8 @@ Page({
             { name: 'TUR', value: '法国' }
         ]
     },
-    onLoad(){
-        
+    onLoad(options){
+        console.log(options)
     },
     onShow(){
 
