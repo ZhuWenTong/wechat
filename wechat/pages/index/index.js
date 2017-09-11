@@ -1,3 +1,4 @@
+var common = require('../../common/common.js');
 Page({
     data: {
         current: 0,
@@ -132,10 +133,14 @@ Page({
                 result = i;
             }
         })
-        result.num --;
-        this.setData({
-            amount
-        })
+        if(result.num == 0){
+            common.toastWarn('数量不能小于0！');
+        } else{
+            result.num--;
+            this.setData({
+                amount
+            })
+        }
     },
     onPullDownRefresh() {
 

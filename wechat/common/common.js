@@ -5,6 +5,14 @@ const common = {
             duration:2000,
             mask:true
         })
+    },
+    toastWarn(title){
+        wx.showToast({
+            title,
+            image: '/images/err.png',
+            duration: 2000,
+            mask: true
+        })
     }
 }
 module.exports = common;
