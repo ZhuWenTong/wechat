@@ -19,7 +19,17 @@ Page({
         }, {
             demo: 'tabBar-info',
             index: 5
-        }]
+        }],
+        amount:[
+            {
+                id:1,
+                num:0
+            },
+            {
+                id:2,
+                num:0
+            }
+        ]
     },
     onLoad(options) {
 
@@ -82,6 +92,23 @@ Page({
                 });
                 break;
         }
+    },
+    add(event){
+        var id = event.currentTarget.dataset.id,
+            amount = this.data.amount,
+            result = '';
+        amount.some((i) => {
+            if(i.id == id){
+                result = i;
+            }
+        })
+        result.num ++;
+        this.setData({
+            amount
+        })
+    },
+    min(event){
+
     },
     onPullDownRefresh() {
 
