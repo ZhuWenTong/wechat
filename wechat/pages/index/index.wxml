@@ -32,7 +32,7 @@
             </view>
         </block>
     </view>
-    <view class='box' id='box' data-name='zwt'>
+    <view class='box' id='box' data-name='zwt' data-age='22'>
         <text>id: {{rect.id}}</text>
         <text>left: {{rect.left}}px</text>
         <text>right: {{rect.right}}px</text>
@@ -41,5 +41,6 @@
         <text>width: {{rect.width}}px</text>
         <text>height: {{rect.height}}px</text>
         <text>dataset-name: {{rect.dataset.name}}</text>
+        <text>data-age: {{rect.dataset.age}}</text>
     </view>
 </view>
