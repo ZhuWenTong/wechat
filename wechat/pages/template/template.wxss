@@ -1,1 +1,2 @@
 @import '../templates/common/common-template.wxss';
+@import '../templates/parent/parent-template.wxss';

@@ -55,7 +55,17 @@ Page({
                 color: '',
                 size: 24
             }
-        ]
+        ],
+        family:[{
+            parent: 'zhangsan',
+            son: 3
+        },{
+            parent: 'lisi',
+            son: 2
+        },{
+            parent: 'wangwu',
+            son: 1
+        }]
     },
     onLoad(options){
         console.log(options)

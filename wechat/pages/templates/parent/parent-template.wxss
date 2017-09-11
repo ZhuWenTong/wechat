@@ -1,0 +1,13 @@
+@import '../son/son-template.wxss';
+.member{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.member text{
+    color: #333;
+    font-family: '微软雅黑';
+    margin-right: 4px;
+    line-height: 30px;
+}

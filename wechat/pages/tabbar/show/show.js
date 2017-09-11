@@ -4,7 +4,7 @@ Page({
 
     },
     onLoad(options) {
-        console.log(options)
+        
     },
     onShow() {
 

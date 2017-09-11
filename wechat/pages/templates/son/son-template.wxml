@@ -1,0 +1,3 @@
+<template name='sonTemplate'>
+    <image src='/images/star.png'></image>
+</template>

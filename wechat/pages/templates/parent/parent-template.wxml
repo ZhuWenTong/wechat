@@ -1,0 +1,9 @@
+<import src='../son/son-template.wxml' />
+<template name='parentTemplate'>
+    <view class='member'>
+        <text>{{parent}}</text>
+        <block wx:for='{{son}}' wx:key=''>
+            <template is='sonTemplate' />
+        </block>
+    </view>
+</template>

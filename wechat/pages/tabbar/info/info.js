@@ -3,7 +3,6 @@ Page({
 
     },
     onLoad(options) {
-        console.log(options)
         wx.getUserInfo({
             success:(res) => {
                 //console.log(res)

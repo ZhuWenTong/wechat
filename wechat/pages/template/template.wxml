@@ -1,4 +1,5 @@
 <import src='../templates/common/common-template.wxml' />
+<import src='../templates/parent/parent-template.wxml' />
 <view class="content">
     <block wx:for='{{common}}' wx:key=''>
         <view class="template" data-code='{{item.code}}' bindtap='templateTap'>
@@ -8,4 +9,9 @@
     <block wx:for='{{iconTypes}}' wx:key=''>
         <icon type="{{item.type}}" size="{{item.size}}" color="{{item.color}}" />
     </block>
+    <view class='family'>
+        <block wx:for='{{family}}' wx:key=''>
+            <template is='parentTemplate' data='{{...item}}'/>
+        </block>
+    </view>
 </view>
