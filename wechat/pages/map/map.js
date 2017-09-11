@@ -10,6 +10,7 @@ Page({
     },
     onShow() {
         wx.getLocation({
+            type: 'gcj02',
             success: (res) => {
                 console.log(res)
                 // this.setData({
@@ -19,6 +20,7 @@ Page({
                 wx.openLocation({
                     latitude: Number(res.latitude),
                     longitude: Number(res.longitude),
+                    scale: 28
                 })
             },
             fail(err){
