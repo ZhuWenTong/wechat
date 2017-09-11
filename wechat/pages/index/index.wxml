@@ -32,5 +32,14 @@
             </view>
         </block>
     </view>
-    <view class='box'></view>
+    <view class='box' id='box' data-name='zwt'>
+        <text>id: {{rect.id}}</text>
+        <text>left: {{rect.left}}px</text>
+        <text>right: {{rect.right}}px</text>
+        <text>top: {{rect.top}}px</text>
+        <text>bottom: {{rect.bottom}}px</text>
+        <text>width: {{rect.width}}px</text>
+        <text>height: {{rect.height}}px</text>
+        <text>dataset-name: {{rect.dataset.name}}</text>
+    </view>
 </view>

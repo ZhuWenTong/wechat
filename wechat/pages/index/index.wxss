@@ -76,7 +76,18 @@ swiper-item:nth-of-type(2n+1){
 }
 
 .box{
-    width: 200rpx;
-    height: 200rpx;
+    width: 600rpx;
+    overflow: hidden;
     background: linear-gradient(to right,#58B7FF,#20A0FF);
+    margin: 40rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box text{
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
 }

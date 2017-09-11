@@ -50,6 +50,9 @@ Page({
             // rect.width   // 节点的宽度
             // rect.height  // 节点的高度
             console.log(rect);
+            this.setData({
+                rect
+            })
         }).exec()
 
     },
