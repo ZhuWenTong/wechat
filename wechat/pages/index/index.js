@@ -1,25 +1,32 @@
-var common = require('../../common/common.js');
+var common = require('../../common/common.js'),
+    app = getApp();
 Page({
     data: {
         current: 0,
         wxdemo: [{
             demo: 'scroll-view',
-            index: 0
+            index: 0,
+            title: 'scroll-view'
         }, {
             demo: 'form',
-            index: 1
+            index: 1,
+            title: 'form'
         }, {
             demo: 'map',
-            index: 2
+            index: 2,
+            title: 'map'
         }, {
             demo: 'template',
-            index: 3
+            index: 3,
+            title: 'template'
         }, {
             demo: 'tabBar-show',
-            index: 4
+            index: 4,
+            title: 'tabBar-show'
         }, {
             demo: 'tabBar-info',
-            index: 5
+            index: 5,
+            title: 'tabBar-info'
         }],
         amount:[
             {
@@ -75,37 +82,37 @@ Page({
         })
     },
     swiperTap(event) {
-        var swiperIndex = event.currentTarget.dataset.swiperIndex;
-        //console.log(swiperIndex)
+        var swiperIndex = event.currentTarget.dataset.swiperIndex,
+            title = event.currentTarget.dataset.title;
         switch (swiperIndex) {
             case 0:
                 wx.navigateTo({
-                    url: '../scroll/scroll',
+                    url: `../scroll/scroll?title=${title}`,
                 });
                 break;
             case 1:
                 wx.navigateTo({
-                    url: '../form/form',
+                    url: `../form/form?title=${title}`,
                 });
                 break;
             case 2:
                 wx.navigateTo({
-                    url: '../map/map',
+                    url: `../map/map?title=${title}`,
                 });
                 break;
             case 3:
                 wx.navigateTo({
-                    url: '../template/template',
+                    url: `../template/template?title=${title}`,
                 });
                 break;
             case 4:
                 wx.switchTab({
-                    url: '../tabbar/show/show',
+                    url: `../tabbar/show/show?title=${title}`,
                 });
                 break;
             case 5:
                 wx.switchTab({
-                    url: '../tabbar/info/info',
+                    url: `../tabbar/info/info?title=${title}`,
                 });
                 break;
         }

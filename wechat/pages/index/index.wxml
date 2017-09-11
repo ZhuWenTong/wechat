@@ -16,7 +16,7 @@
     </view>
     <swiper class="tabs-content" bindchange="tabsChange" current="{{current}}" autoplay interval="3000" circular>
         <block wx:for="{{wxdemo}}" wx:key="">
-            <view bindtap='swiperTap' data-swiper-index='{{item.index}}'>
+            <view bindtap='swiperTap' data-swiper-index='{{item.index}}' data-title='{{item.title}}'>
                 <swiper-item>
                     {{item.demo}}
                 </swiper-item>
