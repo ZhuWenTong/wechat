@@ -44,9 +44,7 @@ Page({
         ]
     },
     onLoad(options) {
-        this.setData({
-            windowWidth: app.windowWidth
-        })
+        
     },
     onReady() {
         wx.onNetworkStatusChange((res) => {
