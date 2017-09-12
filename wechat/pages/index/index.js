@@ -28,14 +28,14 @@ Page({
             index: 5,
             title: 'tabBar-info'
         }],
-        amount:[
+        amount: [
             {
-                id:1,
-                num:0
+                id: 1,
+                num: 0
             },
             {
-                id:2,
-                num:0
+                id: 2,
+                num: 0
             }
         ]
     },
@@ -43,7 +43,17 @@ Page({
 
     },
     onReady() {
-
+        wx.onNetworkStatusChange((res) => {
+            if (res.networkType == 'none') {
+                this.setData({
+                    networkTip: false
+                });
+            } else {
+                this.setData({
+                    networkTip: true
+                })
+            }
+        })
     },
     onShow() {
         wx.createSelectorQuery().select('.box').boundingClientRect((rect) => {
@@ -62,7 +72,6 @@ Page({
                 rect
             })
         }).exec()
-
     },
     swiper(event) {
         //console.log(event)
@@ -117,21 +126,7 @@ Page({
                 break;
         }
     },
-    add(event){
-        var id = event.currentTarget.dataset.id,
-            amount = this.data.amount,
-            result = '';
-        amount.some((i) => {
-            if(i.id == id){
-                result = i;
-            }
-        })
-        result.num ++;
-        this.setData({
-            amount
-        })
-    },
-    min(event){
+    add(event) {
         var id = event.currentTarget.dataset.id,
             amount = this.data.amount,
             result = '';
@@ -140,9 +135,23 @@ Page({
                 result = i;
             }
         })
-        if(result.num == 0){
+        result.num++;
+        this.setData({
+            amount
+        })
+    },
+    min(event) {
+        var id = event.currentTarget.dataset.id,
+            amount = this.data.amount,
+            result = '';
+        amount.some((i) => {
+            if (i.id == id) {
+                result = i;
+            }
+        })
+        if (result.num == 0) {
             common.toastWarn('数量不能小于0！');
-        } else{
+        } else {
             result.num--;
             this.setData({
                 amount
