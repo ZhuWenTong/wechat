@@ -1,6 +1,6 @@
 canvas{
     height:200px;
-    transform: scale(0.5) translate(-50%,-50%);
+    transform: ;
     margin-bottom: 20px;
     background: #eee;
 }
