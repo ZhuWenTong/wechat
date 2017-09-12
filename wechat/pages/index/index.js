@@ -27,6 +27,10 @@ Page({
             demo: 'tabBar-info',
             index: 5,
             title: 'tabBar-info'
+        }, {
+            demo: 'wx-charts',
+            index: 6,
+            title: 'wx-charts'
         }],
         amount: [
             {
@@ -40,7 +44,9 @@ Page({
         ]
     },
     onLoad(options) {
-
+        this.setData({
+            windowWidth: app.windowWidth
+        })
     },
     onReady() {
         wx.onNetworkStatusChange((res) => {
@@ -71,7 +77,7 @@ Page({
             this.setData({
                 rect
             })
-        }).exec()
+        }).exec();
     },
     swiper(event) {
         //console.log(event)
@@ -122,6 +128,11 @@ Page({
             case 5:
                 wx.switchTab({
                     url: `../tabbar/info/info`,//wx.switchTab url不支持queryString
+                });
+                break;
+            case 6:
+                wx.navigateTo({
+                    url: `../wxcharts/wxcharts?title=${title}`,
                 });
                 break;
         }

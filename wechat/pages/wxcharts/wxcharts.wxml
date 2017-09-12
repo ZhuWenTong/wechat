@@ -1,0 +1,4 @@
+<canvas style="width: {{windowWidth*2}}px;" canvas-id="pieCanvas"></canvas>
+<canvas style="width: {{windowWidth*2}}px;" canvas-id="lineCanvas"></canvas>
+<canvas style="width: {{windowWidth*2}}px;" canvas-id="columnCanvas"></canvas>
+<canvas style="width: {{windowWidth*2}}px;" canvas-id="areaCanvas"></canvas>

@@ -7,7 +7,8 @@
         "pages/tabbar/tabbar",
         "pages/tabbar/show/show",
         "pages/tabbar/info/info",
-        "pages/template/template"
+        "pages/template/template",
+        "pages/wxcharts/wxcharts"
     ],
     "window": {
         "navigationBarBackgroundColor": "#20A0FF",
