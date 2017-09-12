@@ -1,5 +1,6 @@
 var Charts = require('../../util/wxcharts-min.js'),
-    app = getApp();
+    app = getApp(),
+    chart1 = null;
 Page({
     data:{
 
@@ -11,7 +12,7 @@ Page({
         })
     },
     onShow(){
-        new Charts({
+        chart1 = new Charts({
             canvasId: 'pieCanvas',
             type: 'pie',
             title: {
@@ -147,6 +148,9 @@ Page({
             width: app.windowWidth,
             height: 200
         });
+    },
+    touchHandler(e){
+        console.log(chart1.getCurrentDataIndex(e))
     },
     onReady(){
 

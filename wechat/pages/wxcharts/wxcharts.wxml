@@ -1,4 +1,4 @@
-<canvas style="width: {{windowWidth}}px;" canvas-id="pieCanvas"></canvas>
+<canvas style="width: {{windowWidth}}px;" canvas-id="pieCanvas" bindtouchstart="touchHandler"></canvas>
 <canvas style="width: {{windowWidth}}px;" canvas-id="lineCanvas"></canvas>
 <canvas style="width: {{windowWidth}}px;" canvas-id="columnCanvas"></canvas>
 <canvas style="width: {{windowWidth}}px;" canvas-id="areaCanvas"></canvas>
