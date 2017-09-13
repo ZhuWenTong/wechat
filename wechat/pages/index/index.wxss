@@ -1,37 +1,48 @@
-swiper{
-    height:400rpx;
+swiper {
+    height: 400rpx;
 }
-swiper-item{
+
+swiper-item {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color:#fff;
-}
-swiper-item:nth-of-type(2n){
-    background: #8492A6;
-}
-swiper-item:nth-of-type(2n+1){
-    background: #F7BA2A;
-}
-
-swiper-item text{
     color: #fff;
 }
 
-.tabs{
-    width:100%;
-    height:60rpx;
+swiper-item:nth-of-type(3n) {
+    background: #8492a6;
+}
+
+swiper-item:nth-of-type(3n+1) {
+    background: #f7ba2a;
+}
+
+swiper-item:nth-of-type(3n+2) {
+    background: #1d8ce0;
+}
+
+swiper-item:nth-of-type(3n+3) {
+    background: #ff4949;
+}
+
+swiper-item text {
+    color: #fff;
+}
+
+.tabs {
+    width: 100%;
+    height: 60rpx;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.tabs text{
+.tabs text {
     flex: 1;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     background: #c0c;
     display: flex;
     flex-direction: row;
@@ -39,40 +50,40 @@ swiper-item text{
     align-items: center;
     border-right: 1px solid #ccc;
     box-sizing: border-box;
-    color:#fff;
+    color: #fff;
 }
 
-.tabs text:last-child{
-    border:none;
+.tabs text:last-child {
+    border: none;
 }
 
-.tabs .selected{
+.tabs .selected {
     background: red;
 }
 
-.tabs-content view:nth-of-type(4n) swiper-item{
-    background: #1D8CE0;
+.tabs-content view:nth-of-type(4n) swiper-item {
+    background: #1d8ce0;
 }
 
-.tabs-content view:nth-of-type(4n+1) swiper-item{
-    background: #FF4949;
+.tabs-content view:nth-of-type(4n+1) swiper-item {
+    background: #ff4949;
 }
 
-.tabs-content view:nth-of-type(4n+2) swiper-item{
-    background: #13CE66;
+.tabs-content view:nth-of-type(4n+2) swiper-item {
+    background: #13ce66;
 }
 
-.tabs-content view:nth-of-type(4n+3) swiper-item{
-    background: #1F2D3D;
+.tabs-content view:nth-of-type(4n+3) swiper-item {
+    background: #1f2d3d;
 }
 
-.amount view{
+.amount view {
     display: flex;
     flex-direction: row;
     margin: 20rpx 0;
 }
 
-.amount view text{
+.amount view text {
     display: block;
     width: 80rpx;
     height: 80rpx;
@@ -81,16 +92,16 @@ swiper-item text{
     border: 1px solid #ccc;
 }
 
-.amount view text:nth-of-type(2){
+.amount view text:nth-of-type(2) {
     width: 160rpx;
     border-left: none;
     border-right: none;
 }
 
-.box{
+.box {
     width: 600rpx;
     overflow: hidden;
-    background: linear-gradient(to right,#8492A6,#475669);
+    background: linear-gradient(to right, #8492a6, #475669);
     margin: 40rpx;
     display: flex;
     flex-direction: column;
@@ -100,7 +111,7 @@ swiper-item text{
     box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #aaa;
 }
 
-.box text{
+.box text {
     font-size: 14px;
     color: #fff;
     line-height: 30px;
