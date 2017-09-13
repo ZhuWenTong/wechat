@@ -20,7 +20,7 @@ Page({
                 wx.openLocation({
                     latitude: Number(res.latitude),
                     longitude: Number(res.longitude),
-                    scale: 28
+                    scale: 20
                 })
             },
             fail(err){
