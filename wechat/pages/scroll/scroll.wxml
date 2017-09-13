@@ -1,4 +1,7 @@
 <view class="content">
+    <view style='text-align:center;'>
+        <text>页面参数: {{options.title}}</text>
+    </view>
     <scroll-view scroll-x>
         <view class="x">
             <view class="box">1</view>

@@ -1,3 +1,6 @@
+<view style='text-align:center;'>
+    <text>页面参数: {{options.title}}</text>
+</view>
 <canvas style="width: {{windowWidth}}px;" canvas-id="pieCanvas" bindtouchstart="touchHandler"></canvas>
 <canvas style="width: {{windowWidth}}px;" canvas-id="lineCanvas" bindtouchstart="touchHandlerLine"></canvas>
 <canvas style="width: {{windowWidth}}px;" canvas-id="columnCanvas" bindtouchstart="touchHandlerLineColume"></canvas>

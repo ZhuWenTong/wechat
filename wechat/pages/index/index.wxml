@@ -42,6 +42,6 @@
         <text>width: {{rect.width}}px</text>
         <text>height: {{rect.height}}px</text>
         <text>dataset-name: {{rect.dataset.name}}</text>
-        <text>data-age: {{rect.dataset.age}}</text>
+        <text>dataset-age: {{rect.dataset.age}}</text>
     </view>
 </view>

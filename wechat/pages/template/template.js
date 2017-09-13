@@ -69,6 +69,9 @@ Page({
     },
     onLoad(options){
         console.log(options)
+        this.setData({
+            options
+        })
     },
     onShow(){
 

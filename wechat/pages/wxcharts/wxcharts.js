@@ -11,7 +11,8 @@ Page({
     onLoad(options){
         console.log(options);
         this.setData({
-            windowWidth: app.systemInfo.windowWidth
+            windowWidth: app.systemInfo.windowWidth,
+            options
         })
     },
     onShow(){
