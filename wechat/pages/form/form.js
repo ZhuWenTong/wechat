@@ -99,7 +99,25 @@ Page({
         console.log(event.detail.value)
     },
     formSubmit(e){
-        console.log(e.detail.value)
+        //console.log(e.detail.value)
+        var content = '';
+        for(var key in e.detail.value){
+            if(e.detail.value[key]){
+                content += `${e.detail.value[key]} `;
+            }
+        }
+        content = content.substring(0, content.length - 1);
+        wx.showModal({
+            title: '你的表单内容',
+            content,
+            success(res){
+                if (res.confirm) {
+                    console.log('用户点击确定')
+                } else if (res.cancel) {
+                    console.log('用户点击取消')
+                }
+            }
+        })
     },
     formReset(){
 
