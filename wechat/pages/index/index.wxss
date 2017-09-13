@@ -9,10 +9,14 @@ swiper-item{
     color:#fff;
 }
 swiper-item:nth-of-type(2n){
-    background: #13CE66;
+    background: #8492A6;
 }
 swiper-item:nth-of-type(2n+1){
     background: #F7BA2A;
+}
+
+swiper-item text{
+    color: #fff;
 }
 
 .tabs{
@@ -46,12 +50,20 @@ swiper-item:nth-of-type(2n+1){
     background: red;
 }
 
-.tabs-content view:nth-of-type(2n) swiper-item{
+.tabs-content view:nth-of-type(4n) swiper-item{
     background: #1D8CE0;
 }
 
-.tabs-content view:nth-of-type(2n+1) swiper-item{
+.tabs-content view:nth-of-type(4n+1) swiper-item{
     background: #FF4949;
+}
+
+.tabs-content view:nth-of-type(4n+2) swiper-item{
+    background: #13CE66;
+}
+
+.tabs-content view:nth-of-type(4n+3) swiper-item{
+    background: #1F2D3D;
 }
 
 .amount view{

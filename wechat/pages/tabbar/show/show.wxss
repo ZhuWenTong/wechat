@@ -4,5 +4,9 @@
     align-items: center;
     flex-wrap: wrap;
     background: #fff;
-    padding:20rpx;
+    padding:20rpx 20rpx 0 20rpx;
+}
+
+.btn button{
+    margin-bottom: 20rpx;
 }

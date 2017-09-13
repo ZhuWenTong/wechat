@@ -2,7 +2,7 @@
     <swiper autoplay indicator-dots indicator-color='#fff' indicator-active-color='#333' circular interval='3000' bindchange='swiper'>
         <block wx:for="{{7}}" wx:key="">
             <swiper-item>
-                {{item}}
+                <text>{{item}}</text>
             </swiper-item>
         </block>
     </swiper>
@@ -19,7 +19,7 @@
         <block wx:for="{{wxdemo}}" wx:key="">
             <view bindtap='swiperTap' data-swiper-index='{{item.index}}' data-title='{{item.title}}'>
                 <swiper-item>
-                    {{item.demo}}
+                    <text>{{item.demo}}</text>
                 </swiper-item>
             </view>
         </block>
