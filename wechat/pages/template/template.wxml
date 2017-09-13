@@ -9,6 +9,9 @@
     <block wx:for='{{iconTypes}}' wx:key=''>
         <icon type="{{item.type}}" size="{{item.size}}" color="{{item.color}}" />
     </block>
+    <view style='text-align:center;'>
+        <text>↓ ↓ ↓ ↓ ↓ ↓ 模板嵌套模板 ↓ ↓ ↓ ↓ ↓ ↓</text>    
+    </view>
     <view class='family'>
         <block wx:for='{{family}}' wx:key=''>
             <template is='parentTemplate' data='{{...item}}'/>
