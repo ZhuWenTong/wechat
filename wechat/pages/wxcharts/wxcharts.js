@@ -34,6 +34,16 @@ Page({
                 name: '成交量4',
                 data: 63,
                 color: '#FF4949'
+            }, {
+                name: '成交量5',
+                data: 33,
+                color: '#99A9BF'
+            }, {
+                name: '成交量6',
+                data: 50
+            }, {
+                name: '成交量7',
+                data: 70
             }],
             width: app.windowWidth ,
             height: 200,
