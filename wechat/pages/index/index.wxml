@@ -1,5 +1,5 @@
 <view class="content">
-    <swiper autoplay indicator-dots indicator-color='#fff' indicator-active-color='#333' circular interval='3000' bindchange='swiper'>
+    <swiper autoplay='{{autoplay}}' indicator-dots indicator-color='#fff' indicator-active-color='#333' circular interval='3000' bindchange='swiper'>
         <block wx:for="{{7}}" wx:key="">
             <swiper-item>
                 <text>{{item}}</text>
@@ -15,7 +15,7 @@
         <text bindtap='tabTap' data-current='5' class='{{current  == 5 ? "selected" : ""}}'>6</text>
         <text bindtap='tabTap' data-current='6' class='{{current  == 6 ? "selected" : ""}}'>7</text>
     </view>
-    <swiper class="tabs-content" bindchange="tabsChange" current="{{current}}" autoplay interval="3000" circular>
+    <swiper class="tabs-content" bindchange="tabsChange" current="{{current}}" autoplay='{{autoplay}}' interval="3000" circular>
         <block wx:for="{{wxdemo}}" wx:key="">
             <view bindtap='swiperTap' data-swiper-index='{{item.index}}' data-title='{{item.title}}'>
                 <swiper-item>

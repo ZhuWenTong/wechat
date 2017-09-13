@@ -76,6 +76,9 @@ Page({
                 rect
             })
         }).exec();
+        this.setData({
+            autoplay: true
+        })
     },
     swiper(event) {
         //console.log(event)
@@ -169,6 +172,11 @@ Page({
     },
     onPullDownRefresh() {
 
+    },
+    onHide(){
+        this.setData({
+            autoplay: false
+        })
     },
     onReachBottom() {
 
