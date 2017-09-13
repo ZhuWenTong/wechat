@@ -1,7 +1,9 @@
 var Charts = require('../../util/wxcharts-min.js'),
     app = getApp(),
     chart1 = null,
-    lineChart = null;
+    lineChart = null,
+    columnChart = null,
+    areaChart = null;
 Page({
     data:{
 
@@ -96,7 +98,7 @@ Page({
             width: app.windowWidth,
             height: 200
         });
-        new Charts({
+        columnChart = new Charts({
             canvasId: 'columnCanvas',
             type: 'column',
             background:'#eeeeee',
@@ -127,7 +129,7 @@ Page({
             height: 200,
             dataLabel: true
         });
-        new Charts({
+        areaChart = new Charts({
             canvasId: 'areaCanvas',
             type: 'area',
             background: '#eeeeee',
@@ -159,7 +161,7 @@ Page({
     touchHandler(e){
         console.log(chart1.getCurrentDataIndex(e));
     },
-    touchHandler(e){
+    touchHandlerLine(e){
         console.log(lineChart.getCurrentDataIndex(e));
         lineChart.showToolTip(e, {
             format: (item ,category) => {
@@ -167,6 +169,14 @@ Page({
                 return `${category} ${item.name} : ${item.data}`
             }
         })
+    },
+    touchHandlerLineColume(e){
+        console.log(columnChart.getCurrentDataIndex(e));
+        //columnChart.showToolTip(e)
+    },
+    touchHandlerArea(e){
+        console.log(areaChart.getCurrentDataIndex(e));
+        areaChart.showToolTip(e)
     },
     onReady(){
 
