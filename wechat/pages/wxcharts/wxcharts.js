@@ -1,6 +1,7 @@
 var Charts = require('../../util/wxcharts-min.js'),
     app = getApp(),
-    chart1 = null;
+    chart1 = null,
+    lineChart = null;
 Page({
     data:{
 
@@ -15,11 +16,7 @@ Page({
         chart1 = new Charts({
             canvasId: 'pieCanvas',
             type: 'pie',
-            title: {
-                name: '成交量',
-                fontSize: 20,
-                color: '#ac0'
-            },
+            
             disablePieStroke: true,
             series: [{
                 name: '成交量1',
@@ -42,7 +39,7 @@ Page({
             height: 200,
             dataLabel: true
         });
-        new Charts({
+        lineChart = new Charts({
             canvasId: 'lineCanvas',
             type: 'line',
             background: '#eeeeee',
@@ -150,7 +147,16 @@ Page({
         });
     },
     touchHandler(e){
-        console.log(chart1.getCurrentDataIndex(e))
+        console.log(chart1.getCurrentDataIndex(e));
+    },
+    touchHandler(e){
+        console.log(lineChart.getCurrentDataIndex(e));
+        lineChart.showToolTip(e, {
+            format: (item ,category) => {
+                //console.log(item ,category)
+                return `${category} ${item.name} : ${item.data}`
+            }
+        })
     },
     onReady(){
 
