@@ -1,3 +1,4 @@
+var app = getApp();
 Page({
     data: {
 
@@ -11,13 +12,8 @@ Page({
                 })
             }
         });
-        wx.getSystemInfo({
-            success: (res) => {
-                //console.log(res)
-                this.setData({
-                    systemInfo: res
-                })
-            }
+        this.setData({
+            systemInfo: app.systemInfo
         })
     },
     onShow() {

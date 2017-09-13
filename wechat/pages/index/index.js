@@ -173,7 +173,7 @@ Page({
     onPullDownRefresh() {
 
     },
-    onHide(){
+    onHide(){//离开index轮播图停止动画
         this.setData({
             autoplay: false
         })

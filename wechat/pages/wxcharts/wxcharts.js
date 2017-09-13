@@ -11,7 +11,7 @@ Page({
     onLoad(options){
         console.log(options);
         this.setData({
-            windowWidth: app.windowWidth
+            windowWidth: app.systemInfo.windowWidth
         })
     },
     onShow(){
@@ -47,7 +47,7 @@ Page({
                 name: '成交量7',
                 data: 70
             }],
-            width: app.windowWidth ,
+            width: this.data.windowWidth ,
             height: 200,
             dataLabel: true
         });
@@ -95,7 +95,7 @@ Page({
                 fontColor: 'red',
                 titleFontColor: 'blue'
             },
-            width: app.windowWidth,
+            width: this.data.windowWidth,
             height: 200
         });
         columnChart = new Charts({
@@ -125,7 +125,7 @@ Page({
                     return val + '万';
                 }
             },
-            width: app.windowWidth,
+            width: this.data.windowWidth,
             height: 200,
             dataLabel: true
         });
@@ -154,7 +154,7 @@ Page({
                     return val + '万';
                 }
             },
-            width: app.windowWidth,
+            width: this.data.windowWidth,
             height: 200
         });
     },
