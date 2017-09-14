@@ -75,7 +75,9 @@ Page({
             this.setData({
                 rect
             })
-        }).exec();
+        }).exec((res) => {
+            console.log(res)
+        });
         this.setData({
             autoplay: true
         })

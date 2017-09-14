@@ -9,9 +9,9 @@ Page({
         })
     },
     onShow(){
-        wx.setNavigationBarColor({
+        wx.setNavigationBarColor({//设置头部导航背景颜色
             frontColor: '#ffffff',
-            backgroundColor: '#ff0000',
+            backgroundColor: '#972620',
             animation: {
                 duration: 2000,
                 timingFunc: 'easeInOut'

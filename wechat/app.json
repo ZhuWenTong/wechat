@@ -11,7 +11,7 @@
         "pages/wxcharts/wxcharts"
     ],
     "window": {
-        "navigationBarBackgroundColor": "#20A0FF",
+        "navigationBarBackgroundColor": "#1D8CE0",
         "navigationBarTextStyle": "white",
         "backgroundColor": "#eeeeee",
         "backgroundTextStyle": "light",
