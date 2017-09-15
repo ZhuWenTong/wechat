@@ -8,6 +8,7 @@
         "pages/tabbar/show/show",
         "pages/tabbar/info/info",
         "pages/template/template",
+        "pages/obj/obj",
         "pages/wxcharts/wxcharts"
     ],
     "window": {

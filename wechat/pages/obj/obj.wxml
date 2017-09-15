@@ -1,0 +1,4 @@
+<import src='../templates/obj/obj-template' />
+<view class='content'>
+    <template is='objTemplate' data='{{...objData}}' />
+</view>

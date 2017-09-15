@@ -65,6 +65,23 @@ Page({
         },{
             parent: 'wangwu',
             son: 1
+        }],
+        obj: [{
+            key: 'name',
+            objdata: [{
+                name: 'zhangsan'
+            }, {
+                name: 'lisi'
+            }],
+            color: '#F7BA2A'
+        }, {
+            key: 'age',
+            objdata: [{
+                age: 20
+            }, {
+                age: 18
+            }],
+            color: '#FF4949'
         }]
     },
     onLoad(options){
@@ -78,6 +95,21 @@ Page({
     },
     templateTap(event){
         console.log(event)
+    },
+    onKeyTap(event){
+        var key = event.currentTarget.dataset.key,
+            obj = this.data.obj,
+            objData = null;
+        obj.some((i) => {
+            if(i.key == key){
+                objData = i;
+                return;
+            }
+        });
+        objData = JSON.stringify(objData);
+        wx.navigateTo({
+            url: `../obj/obj?objData=${objData}`
+        })
     },
     onReady(){
 

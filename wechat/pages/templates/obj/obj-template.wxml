@@ -1,0 +1,10 @@
+<template name='objTemplate'>
+    <view>
+        <text>key: {{key}}</text>
+        <block wx:for='{{objdata}}' wx:key=''>
+            <view>
+                <text>{{key}}: {{item[key]}}</text>
+            </view>
+        </block>
+    </view>
+</template>

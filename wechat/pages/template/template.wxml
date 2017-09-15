@@ -1,5 +1,6 @@
 <import src='../templates/common/common-template.wxml' />
 <import src='../templates/parent/parent-template.wxml' />
+
 <view class="content">
     <view style='text-align:center;'>
         <text>页面参数: {{options.title}}</text>
@@ -21,6 +22,14 @@
     <view class='family'>
         <block wx:for='{{family}}' wx:key=''>
             <template is='parentTemplate' data='{{...item}}'/>
+        </block>
+    </view>
+    <view style='text-align:center;'>
+        <text>↓ ↓ ↓ ↓ ↓ ↓ 对象不同的key取值 ↓ ↓ ↓ ↓ ↓ ↓</text>    
+    </view>
+    <view class='obj'>
+        <block wx:for='{{obj}}' wx:key=''>
+            <text data-key='{{item.key}}' bindtap='onKeyTap'>{{item.key}}</text>
         </block>
     </view>
 </view>
