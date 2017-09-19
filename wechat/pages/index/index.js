@@ -143,10 +143,11 @@ Page({
     add(event) {
         var id = event.currentTarget.dataset.id,
             amount = this.data.amount,
-            result = '';
+            result = null;
         amount.some((i) => {
             if (i.id == id) {
                 result = i;
+                return;
             }
         })
         result.num++;
@@ -157,10 +158,11 @@ Page({
     min(event) {
         var id = event.currentTarget.dataset.id,
             amount = this.data.amount,
-            result = '';
+            result = null;
         amount.some((i) => {
             if (i.id == id) {
                 result = i;
+                return;
             }
         })
         if (result.num == 0) {
@@ -171,6 +173,25 @@ Page({
                 amount
             })
         }
+    },
+    int(event){
+        clearTimeout(this.timer);//清除延时器可以减少setData次数
+        this.timer = setTimeout(() => {
+            var id = event.currentTarget.dataset.id,
+                value = event.detail.value,
+                amount = this.data.amount,
+                result = null;
+            amount.map((i) => {
+                if(i.id == id){
+                    result = i;
+                    result.num = value;
+                    return;
+                }
+            });
+            this.setData({
+                amount
+            })       
+        },300);
     },
     onPullDownRefresh() {
 

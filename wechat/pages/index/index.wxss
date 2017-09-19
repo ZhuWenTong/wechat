@@ -92,8 +92,12 @@ swiper-item text {
     border: 1px solid #ccc;
 }
 
-.amount view text:nth-of-type(2) {
+.amount view input {
     width: 160rpx;
+    text-align: center;
+    height:80rpx;
+    line-height: 80rpx;
+    border: 1px solid #ccc;
     border-left: none;
     border-right: none;
 }

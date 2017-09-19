@@ -28,7 +28,7 @@
         <block wx:for='{{amount}}' wx:key=''>
             <view>
                 <text bindtap='min' data-id='{{item.id}}'>-</text>
-                <text>{{item.num}}</text>
+                <input value='{{item.num}}' data-id='{{item.id}}' bindinput='int'></input>
                 <text bindtap='add' data-id='{{item.id}}'>+</text>
             </view>
         </block>
