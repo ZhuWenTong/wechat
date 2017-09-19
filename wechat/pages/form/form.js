@@ -1,3 +1,4 @@
+import {Es6} from 'class/class.js';
 Page({
     data:{
         animals:[
@@ -57,7 +58,7 @@ Page({
         })
     },
     onShow(){
-
+        new Es6('zwt', 22).init();
     },
     inputting(event){
         console.log(event.detail.value)

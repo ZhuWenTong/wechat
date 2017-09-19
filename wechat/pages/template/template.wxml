@@ -21,7 +21,7 @@
     </view>
     <view class='family'>
         <block wx:for='{{family}}' wx:key=''>
-            <template is='parentTemplate' data='{{...item}}'/>
+            <template is='parentTemplate' data='{{...item}}' />
         </block>
     </view>
     <view style='text-align:center;'>
