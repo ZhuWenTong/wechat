@@ -191,7 +191,7 @@ Page({
             this.setData({
                 amount
             })       
-        },300);
+        }, 300);
     },
     onPullDownRefresh() {
 

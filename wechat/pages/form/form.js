@@ -1,4 +1,6 @@
 import {Es6} from 'class/class.js';
+import {a, b} from 'class/util.js';
+import c from 'class/util.js';
 Page({
     data:{
         animals:[
@@ -59,9 +61,12 @@ Page({
     },
     onShow(){
         new Es6('zwt', 22).init();
+        a('a');
+        b('b');
+        c('c');
     },
     inputting(event){
-        console.log(event.detail.value)
+        console.log(event.detail.value);
     },
     onBlur(event){
         console.log(event.detail.value)
