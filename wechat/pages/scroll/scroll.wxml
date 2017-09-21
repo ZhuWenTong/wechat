@@ -8,7 +8,7 @@
             <view class="box box1">2</view>
         </view>
     </scroll-view>
-    <scroll-view scroll-y>
+    <scroll-view scroll-y bindscrolltolower='toBottom'>
         <view class="y">
             <view class="box2">3</view>
             <view class="box3">4</view>

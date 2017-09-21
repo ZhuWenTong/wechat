@@ -18,6 +18,9 @@ Page({
             }
         })
     },
+    toBottom(){
+        console.log('滚动到底部')
+    },
     onReady(){
 
     },
