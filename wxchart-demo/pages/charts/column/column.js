@@ -4,8 +4,8 @@ var columnChart = null;
 var chartData = {
     main: {
         title: '总成交量',
-        data: [15, 20, 45, 37],
-        categories: ['2012', '2013', '2014', '2015']
+        data: [15, 20, 45, 37, 50, 60, 70],
+        categories: ['2012', '2013', '2014', '2015', '2016', '2017', '2018']
     },
     sub: [{
         title: '2012年度成交量',
@@ -30,6 +30,9 @@ Page({
         chartTitle: '总成交量',
         isMainChartDisplay: true
     },
+    moveHandler: function (e) {
+        columnChart.scroll(e);
+    },
     backToMainChart: function () {
         this.setData({
             chartTitle: chartData.main.title,
@@ -47,6 +50,7 @@ Page({
         });
     },
     touchHandler: function (e) {
+        columnChart.scrollStart(e);
         var index = columnChart.getCurrentDataIndex(e);
         if (index > -1 && index < chartData.sub.length && this.data.isMainChartDisplay) {
             this.setData({
@@ -105,6 +109,7 @@ Page({
             },
             width: windowWidth,
             height: 200,
+            enableScroll: true,
         });
     }
 });

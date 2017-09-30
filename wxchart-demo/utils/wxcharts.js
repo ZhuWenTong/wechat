@@ -856,7 +856,7 @@ function drawPieText(series, opts, config, context, radius, center) {
         var arc = 2 * Math.PI - (item._start_ + 2 * Math.PI * item._proportion_ / 2);
         var text = item.format ? item.format(+item._proportion_.toFixed(2)) : util.toFixed(item._proportion_ * 100) + '%';
         var color = item.color;
-        return { arc: arc, text: text, color: color };
+        return { arc: arc, text: item.data + ' (' + text + ')', color: color };
     });
     seriesConvert.forEach(function (item) {
         // line end

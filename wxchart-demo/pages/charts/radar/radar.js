@@ -23,6 +23,9 @@ Page({
             series: [{
                 name: '成交量1',
                 data: [90, 110, 125, 95, 87, 122]
+            }, {
+                name: '成交量2',
+                data: [190, 200, 125, 95, 87, 122]
             }],
             width: windowWidth,
             height: 200,
