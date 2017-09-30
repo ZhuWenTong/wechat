@@ -19,7 +19,6 @@ Page({
         chart1 = new Charts({
             canvasId: 'pieCanvas',
             type: 'pie',
-            
             disablePieStroke: true,
             series: [{
                 name: '成交量1',
