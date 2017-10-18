@@ -1,8 +1,8 @@
 Page({
-    data:{
+    data: {
 
     },
-    onLoad(options){
+    onLoad(options) {
         var objData = JSON.parse(options.objData);
         this.setData({
             objData
@@ -13,19 +13,19 @@ Page({
         wx.setNavigationBarColor({
             frontColor: '#ffffff',
             backgroundColor: objData.color,
-            animation:{
+            animation: {
                 duration: 1000,
                 timingFunc: 'easeInOut'
             }
         })
     },
-    onShow(){
-       
-    },
-    onReady(){
+    onShow() {
 
     },
-    onReachBottom(){
+    onReady() {
+
+    },
+    onReachBottom() {
 
     }
 })

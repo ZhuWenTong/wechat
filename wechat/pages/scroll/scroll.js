@@ -1,14 +1,14 @@
 Page({
-    data:{
+    data: {
 
     },
-    onLoad(options){
+    onLoad(options) {
         console.log(options)
         this.setData({
             options
         })
     },
-    onShow(){
+    onShow() {
         wx.setNavigationBarColor({//设置头部导航背景颜色
             frontColor: '#ffffff',
             backgroundColor: '#972620',
@@ -18,13 +18,13 @@ Page({
             }
         })
     },
-    toBottom(){
+    toBottom() {
         console.log('滚动到底部')
     },
-    onReady(){
+    onReady() {
 
     },
-    onReachBottom(){
-        
+    onReachBottom() {
+
     }
 })

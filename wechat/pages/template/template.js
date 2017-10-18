@@ -1,19 +1,19 @@
 Page({
-    data:{
-        common:[
+    data: {
+        common: [
             {
-                code:0,
-                name:'zhangsan'
-            },{
-                code:1,
-                name:'lisi'
+                code: 0,
+                name: 'zhangsan'
+            }, {
+                code: 1,
+                name: 'lisi'
             }
         ],
         iconTypes: [
             {
-                type:'success',
-                color:'',
-                size:16
+                type: 'success',
+                color: '',
+                size: 16
             },
             {
                 type: 'success_no_circle',
@@ -56,13 +56,13 @@ Page({
                 size: 24
             }
         ],
-        family:[{
+        family: [{
             parent: 'zhangsan',
             son: 3
-        },{
+        }, {
             parent: 'lisi',
             son: 2
-        },{
+        }, {
             parent: 'wangwu',
             son: 1
         }],
@@ -84,24 +84,24 @@ Page({
             color: '#FF4949'
         }]
     },
-    onLoad(options){
+    onLoad(options) {
         console.log(options)
         this.setData({
             options
         })
     },
-    onShow(){
+    onShow() {
 
     },
-    templateTap(event){
+    templateTap(event) {
         console.log(event)
     },
-    onKeyTap(event){
+    onKeyTap(event) {
         var key = event.currentTarget.dataset.key,
             obj = this.data.obj,
             objData = null;
         obj.some((i) => {
-            if(i.key == key){
+            if (i.key == key) {
                 objData = i;
                 return;
             }
@@ -111,10 +111,10 @@ Page({
             url: `../obj/obj?objData=${objData}`
         })
     },
-    onReady(){
+    onReady() {
 
     },
-    onReachBottom(){
+    onReachBottom() {
 
     }
 })

@@ -1,10 +1,10 @@
 class Es6 {
-    constructor(name, age){
+    constructor(name, age) {
         this.name = name;
         this.age = age;
     }
-    init(){
+    init() {
         console.log(this.name, this.age)
     }
 }
-export {Es6};
+export { Es6 };

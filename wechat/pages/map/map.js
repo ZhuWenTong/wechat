@@ -23,7 +23,7 @@ Page({
                     scale: 20
                 })
             },
-            fail(err){
+            fail(err) {
                 console.log(err)
             }
         })

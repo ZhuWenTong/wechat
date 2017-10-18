@@ -1,12 +1,12 @@
 const common = {
-    toast(title){
+    toast(title) {
         wx.showToast({
             title,
-            duration:2000,
-            mask:true
+            duration: 2000,
+            mask: true
         })
     },
-    toastWarn(title){
+    toastWarn(title) {
         wx.showToast({
             title,
             image: '/images/err.png',

@@ -5,17 +5,17 @@ var Charts = require('../../util/wxcharts-min.js'),
     columnChart = null,
     areaChart = null;
 Page({
-    data:{
+    data: {
 
     },
-    onLoad(options){
+    onLoad(options) {
         console.log(options);
         this.setData({
             windowWidth: app.systemInfo.windowWidth,
             options
         })
     },
-    onShow(){
+    onShow() {
         chart1 = new Charts({
             canvasId: 'pieCanvas',
             type: 'pie',
@@ -47,7 +47,7 @@ Page({
                 name: '成交量7',
                 data: 70
             }],
-            width: this.data.windowWidth ,
+            width: this.data.windowWidth,
             height: 200,
             dataLabel: true
         });
@@ -58,11 +58,11 @@ Page({
             categories: ['2012', '2013', '2014', '2015', '2016', '2017'],
             series: [{
                 name: '进口',
-                data: [0.15, 0.2, 0.45, 0.37, 0.4, 0.8],
+                data: [0, 0, 0.45, 0.37, 0.4, 0.8],
                 format: function (val) {
                     return val.toFixed(2) + '万';
                 },
-                color:'#FF4949'
+                color: '#FF4949'
             }, {
                 name: '出口',
                 data: [0.30, 0.37, 0.65, 0.78, 0.69, 0.94],
@@ -96,12 +96,15 @@ Page({
                 titleFontColor: 'blue'
             },
             width: this.data.windowWidth,
-            height: 200
+            height: 200,
+            extra: {
+                lineStyle: 'curve'
+            }
         });
         columnChart = new Charts({
             canvasId: 'columnCanvas',
             type: 'column',
-            background:'#eeeeee',
+            background: '#eeeeee',
             categories: ['2016-08', '2016-09', '2016-10', '2016-11', '2016-12', '2017'],
             series: [{
                 name: '成交量1',
@@ -158,30 +161,30 @@ Page({
             height: 200
         });
     },
-    touchHandler(e){
+    touchHandler(e) {
         console.log(chart1.getCurrentDataIndex(e));
     },
-    touchHandlerLine(e){
+    touchHandlerLine(e) {
         console.log(lineChart.getCurrentDataIndex(e));
         lineChart.showToolTip(e, {
-            format: (item ,category) => {
+            format: (item, category) => {
                 //console.log(item ,category)
                 return `${category} ${item.name} : ${item.data}`
             }
         })
     },
-    touchHandlerLineColume(e){
+    touchHandlerLineColume(e) {
         console.log(columnChart.getCurrentDataIndex(e));
         //columnChart.showToolTip(e)
     },
-    touchHandlerArea(e){
+    touchHandlerArea(e) {
         console.log(areaChart.getCurrentDataIndex(e));
         areaChart.showToolTip(e)
     },
-    onReady(){
+    onReady() {
 
     },
-    onReachBottom(){
+    onReachBottom() {
 
     }
 })

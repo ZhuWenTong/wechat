@@ -5,7 +5,7 @@ Page({
     },
     onLoad(options) {
         wx.getUserInfo({
-            success:(res) => {
+            success: (res) => {
                 //console.log(res)
                 this.setData({
                     userInfo: res.userInfo

@@ -4,7 +4,7 @@ Page({
 
     },
     onLoad(options) {
-        
+
     },
     onShow() {
 
@@ -12,7 +12,7 @@ Page({
     onReady() {
 
     },
-    onToastTap(event){
+    onToastTap(event) {
         // wx.showToast({
         //     title: 'toast',
         //     mask: true,
@@ -22,23 +22,23 @@ Page({
         var title = 'demo'
         common.toast(`toast ${title}`);
     },
-    onLoadTap(event){
+    onLoadTap(event) {
         wx.showLoading({
             title: 'loading...',
             mask: true
         });
         setTimeout(() => {
             wx.hideLoading();
-        },2000)
+        }, 2000)
     },
-    onModalTap(event){
+    onModalTap(event) {
         wx.showModal({
             title: 'showModal',
             content: 'Are you sure?',
             showCancel: true,
             cancelText: '取消',
             confirmText: '确定',
-            success(res){
+            success(res) {
                 console.log(res);
                 if (res.confirm) {
                     console.log('用户点击确定')
@@ -46,22 +46,22 @@ Page({
                     console.log('用户点击取消')
                 }
             },
-            fail(err){
+            fail(err) {
                 console.log(err)
             }
         })
     },
-    openPdf(event){
+    openPdf(event) {
         wx.downloadFile({
-            url:'http://api.idocv.com/view/KklmYOf',
+            url: 'http://api.idocv.com/view/KklmYOf',
             success: (res) => {
                 console.log(res);
                 var filePath = res.tempFilePath;
                 wx.openDocument({
                     filePath,
-                    fileType:'pdf',
+                    fileType: 'pdf',
                     success: (resq) => {
-                        console.log(resq,'打开文档成功')
+                        console.log(resq, '打开文档成功')
                     },
                     fail: (err) => {
                         console.log(err)
@@ -70,7 +70,7 @@ Page({
             }
         })
     },
-    imgInfo(event){
+    imgInfo(event) {
         wx.getImageInfo({
             src: '/images/index.png',
             success: (res) => {
@@ -78,21 +78,21 @@ Page({
             }
         })
     },
-    chooseImg(event){
+    chooseImg(event) {
         wx.chooseImage({
-            success: function(res) {
+            success: function (res) {
                 console.log(res)
             },
         })
     },
-    onPullDownRefresh(){
+    onPullDownRefresh() {
         console.log('开始下拉刷新');
         wx.showNavigationBarLoading();
         setTimeout(() => {
             wx.hideNavigationBarLoading();
             wx.stopPullDownRefresh();
             console.log('下拉刷新停止');
-        },2000)
+        }, 2000)
     },
     onReachBottom() {
 

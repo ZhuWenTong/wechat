@@ -1,17 +1,17 @@
 Page({
-    data:{
+    data: {
 
     },
-    onLoad(){
+    onLoad() {
 
     },
-    onShow(){
+    onShow() {
 
     },
-    onReady(){
+    onReady() {
 
     },
-    onReachBottom(){
-        
+    onReachBottom() {
+
     }
 })

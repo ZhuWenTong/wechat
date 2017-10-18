@@ -44,7 +44,7 @@ Page({
         ]
     },
     onLoad(options) {
-        
+
     },
     onReady() {
         wx.onNetworkStatusChange((res) => {
@@ -174,7 +174,7 @@ Page({
             })
         }
     },
-    int(event){
+    int(event) {
         clearTimeout(this.timer);//清除延时器可以减少setData次数
         this.timer = setTimeout(() => {
             var id = event.currentTarget.dataset.id,
@@ -182,7 +182,7 @@ Page({
                 amount = this.data.amount,
                 result = null;
             amount.map((i) => {
-                if(i.id == id){
+                if (i.id == id) {
                     result = i;
                     result.num = value;
                     return;
@@ -190,13 +190,13 @@ Page({
             });
             this.setData({
                 amount
-            })       
+            })
         }, 300);
     },
     onPullDownRefresh() {
 
     },
-    onHide(){//离开index轮播图停止动画
+    onHide() {//离开index轮播图停止动画
         this.setData({
             autoplay: false
         })
