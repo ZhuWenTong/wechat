@@ -1,3 +1,4 @@
 <template name='sonTemplate'>
-    <image src='/images/star.png'></image>
+    <!--字体图标类-->
+    <text class='icon iconfont icon-star' style='color:#f2e835;font-size:20px;'></text>
 </template>

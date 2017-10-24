@@ -1,4 +1,2 @@
-image{
-    width: 20px;
-    height: 20px;
-}
+/*引用字体图标*/
+@import '../../../fonts/iconfont.wxss';
