@@ -63,6 +63,7 @@ Page({
         })
     },
     onShow() {
+        wx.hideLoading()
         wx.createSelectorQuery().select('.box').boundingClientRect((rect) => {
             // rect.id 
 
@@ -103,45 +104,81 @@ Page({
         })
     },
     swiperTap(event) {
-        var swiperIndex = event.currentTarget.dataset.swiperIndex,
-            title = event.currentTarget.dataset.title;
-        switch (swiperIndex) {
-            case 0:
-                wx.navigateTo({
-                    url: `../scroll/scroll?title=${title}`,
-                });
-                break;
-            case 1:
-                wx.navigateTo({
-                    url: `../form/form?title=${title}`,
-                });
-                break;
-            case 2:
-                wx.navigateTo({
-                    url: `../map/map?title=${title}`,
-                });
-                break;
-            case 3:
-                wx.navigateTo({
-                    url: `../template/template?title=${title}`,
-                });
-                break;
-            case 4:
-                wx.switchTab({
-                    url: `../tabbar/show/show`,
-                });
-                break;
-            case 5:
-                wx.switchTab({
-                    url: `../tabbar/info/info`,//wx.switchTab url不支持queryString
-                });
-                break;
-            case 6:
-                wx.navigateTo({
-                    url: `../wxcharts/wxcharts?title=${title}`,
-                });
-                break;
-        }
+        common.getNetwork();
+        wx.showLoading({
+            title: '',
+        })
+        setTimeout(() => {
+            var hasNetwork = wx.getStorageSync('hasNetwork') == 'none' ? false : true;
+            console.log(hasNetwork)
+            var swiperIndex = event.currentTarget.dataset.swiperIndex,
+                title = event.currentTarget.dataset.title;
+            switch (swiperIndex) {
+                case 0:
+                    if (hasNetwork) {
+                        wx.navigateTo({
+                            url: `../scroll/scroll?title=${title}`,
+                        });
+                    } else {
+                        common.toastWarn('当前没有网络');
+                    }
+                    break;
+                case 1:
+                    if (hasNetwork) {
+                        wx.navigateTo({
+                            url: `../form/form?title=${title}`,
+                        });
+                    } else {
+                        common.toastWarn('当前没有网络');
+                    }
+                    break;
+                case 2:
+                    if (hasNetwork) {
+                        wx.navigateTo({
+                            url: `../map/map?title=${title}`,
+                        });
+                    } else {
+                        common.toastWarn('当前没有网络');
+                    }
+                    break;
+                case 3:
+                    if (hasNetwork) {
+                        wx.navigateTo({
+                            url: `../template/template?title=${title}`,
+                        });
+                    } else {
+                        common.toastWarn('当前没有网络');
+                    }
+                    break;
+                case 4:
+                    if (hasNetwork) {
+                        wx.switchTab({
+                            url: `../tabbar/show/show`,
+                        });
+                    } else {
+                        common.toastWarn('当前没有网络');
+                    }
+                    break;
+                case 5:
+                    if (hasNetwork) {
+                        wx.switchTab({
+                            url: `../tabbar/info/info`,//wx.switchTab url不支持queryString
+                        });
+                    } else {
+                        common.toastWarn('当前没有网络');
+                    }
+                    break;
+                case 6:
+                    if (hasNetwork) {
+                        wx.navigateTo({
+                            url: `../wxcharts/wxcharts?title=${title}`,
+                        });
+                    } else {
+                        common.toastWarn('当前没有网络');
+                    }
+                    break;
+            }
+        }, 50);
     },
     add(event) {
         var id = event.currentTarget.dataset.id,

@@ -13,6 +13,14 @@ const common = {
             duration: 2000,
             mask: true
         })
+    },
+    getNetwork() {
+        wx.getNetworkType({
+            success: (res) => {
+                console.log(res)
+                wx.setStorageSync('hasNetwork', res.networkType);
+            }
+        })
     }
 }
 module.exports = common;
