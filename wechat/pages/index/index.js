@@ -47,6 +47,9 @@ Page({
 
     },
     onReady() {
+        /**
+         * 检查网络状况
+         */
         wx.onNetworkStatusChange((res) => {
             if (res.networkType == 'none') {
                 this.setData({
