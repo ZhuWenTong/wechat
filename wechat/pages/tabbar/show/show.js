@@ -1,7 +1,16 @@
 var common = require('../../../common/common.js');
 Page({
     data: {
-
+        btns: [{
+            content: 'item1',
+            select: true
+        }, {
+            content: 'item2',
+            select: false
+        }, {
+            content: 'item3',
+            select: false
+        }]
     },
     onLoad(options) {
 
@@ -83,6 +92,18 @@ Page({
             success: function (res) {
                 console.log(res)
             },
+        })
+    },
+    onBtnTap(event) {
+        var content = event.currentTarget.dataset.content,
+            btns = this.data.btns;
+        btns.map((i) => {
+            if(i.content == content) {
+                i.select = !i.select;
+            }
+        })
+        this.setData({
+            btns
         })
     },
     onPullDownRefresh() {

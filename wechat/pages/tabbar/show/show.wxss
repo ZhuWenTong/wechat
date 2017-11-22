@@ -10,3 +10,18 @@
 .btn button{
     margin-bottom: 20rpx;
 }
+
+.btns{
+    margin-top: 10px;
+    padding: 10px 0;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selected{
+    background: #1D8CE0;
+    color: #fff;
+}

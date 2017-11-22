@@ -7,4 +7,9 @@
         <button bindtap="imgInfo">imgInfo</button>
         <button bindtap="chooseImg">chooseImg</button>
     </view>
+    <view class='btns'>
+        <block wx:for='{{btns}}' wx:key=''>
+            <button bindtap='onBtnTap' data-content='{{item.content}}' class='{{item.select ? "selected" : ""}}'>{{item.content}}</button>
+        </block>
+    </view>
 </view>
