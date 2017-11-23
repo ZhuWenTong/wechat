@@ -1,0 +1,11 @@
+var showRequire = require('show-demo.wxs');
+console.log(showRequire.name, showRequire.age, showRequire.speak('zwt'), showRequire.msg);
+var obj = {
+    name: showRequire.name,
+    age: showRequire.age,
+    msg: showRequire.msg,
+    speak: showRequire.speak
+};
+module.exports = {
+    obj: obj
+}

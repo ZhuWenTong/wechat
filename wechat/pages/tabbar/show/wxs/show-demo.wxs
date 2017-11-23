@@ -1,0 +1,11 @@
+var name = 'zhangsan',
+    age = 20,
+    speak = function(name) {
+        return name;
+    };
+module.exports = {
+    name: name, 
+    age: age, 
+    speak: speak
+};
+module.exports.msg = 'hello world';

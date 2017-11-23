@@ -1,3 +1,5 @@
+<wxs src='wxs/show-demo.wxs' module='wxsShow' />
+<wxs src='wxs/show-require.wxs' module='wxsRequire' />
 <view class="content">
     <view class="btn">
         <button bindtap="onToastTap">showToast</button>
@@ -11,5 +13,20 @@
         <block wx:for='{{btns}}' wx:key=''>
             <button bindtap='onBtnTap' data-content='{{item.content}}' class='{{item.select ? "selected" : ""}}'>{{item.content}}</button>
         </block>
+    </view>
+    <view style='text-align:center;'>
+        <text>↓ ↓ ↓ ↓ ↓ ↓ wxs模块demo ↓ ↓ ↓ ↓ ↓ ↓</text>
+    </view>
+    <view class='wxs-demo'>
+        <text>{{wxsShow.name}}</text>
+        <text>{{wxsShow.age}}</text>
+        <text>{{wxsShow.speak('lisi')}}</text>
+        <text>{{wxsShow.msg}}</text>
+    </view>
+    <view class='wxs-require'>
+        <text>{{wxsRequire.obj.name}}</text>
+        <text>{{wxsRequire.obj.age}}</text>
+        <text>{{wxsRequire.obj.speak('zwt')}}</text>
+        <text>{{wxsRequire.obj.msg}}</text>
     </view>
 </view>
