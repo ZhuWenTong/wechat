@@ -14,11 +14,23 @@ const common = {
             mask: true
         })
     },
-    getNetwork() {
+    /**
+     * @date 2017-11-23
+     * 获取当前网络状态
+     */
+    getNetwork(self) {
         wx.getNetworkType({
             success: (res) => {
                 console.log(res)
-                wx.setStorageSync('hasNetwork', res.networkType);
+                if(res.networkType == 'none') {
+                    self.setData({
+                        hasNetwork: false      
+                    })
+                } else {
+                    self.setData({
+                        hasNetwork: true
+                    })
+                }
             }
         })
     }

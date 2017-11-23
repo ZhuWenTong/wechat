@@ -63,7 +63,6 @@ Page({
         })
     },
     onShow() {
-        wx.hideLoading()
         wx.createSelectorQuery().select('.box').boundingClientRect((rect) => {
             // rect.id 
 
@@ -104,12 +103,9 @@ Page({
         })
     },
     swiperTap(event) {
-        common.getNetwork();
-        wx.showLoading({
-            title: '',
-        })
+        common.getNetwork(this);
         setTimeout(() => {
-            var hasNetwork = wx.getStorageSync('hasNetwork') == 'none' ? false : true;
+            var hasNetwork = this.data.hasNetwork;
             console.log(hasNetwork)
             var swiperIndex = event.currentTarget.dataset.swiperIndex,
                 title = event.currentTarget.dataset.title;
@@ -178,7 +174,7 @@ Page({
                     }
                     break;
             }
-        }, 50);
+        }, 10);
     },
     add(event) {
         var id = event.currentTarget.dataset.id,
