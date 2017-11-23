@@ -1,7 +1,7 @@
 var showRequire = require('show-demo.wxs');
 console.log(showRequire.name, showRequire.age, showRequire.speak('zwt'), showRequire.msg);
 var obj = {
-    name: showRequire.name,
+    name: showRequire.name + ' 你好',
     age: showRequire.age,
     msg: showRequire.msg,
     speak: showRequire.speak
