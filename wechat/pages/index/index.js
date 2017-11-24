@@ -174,7 +174,7 @@ Page({
                     }
                     break;
             }
-        }, 10);
+        }, 50);
     },
     add(event) {
         var id = event.currentTarget.dataset.id,
