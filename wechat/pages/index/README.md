@@ -4,4 +4,4 @@
 获取某一节点的信息 <br />
 获取网络状态 <br />
 页面跳转传参 <br />
-tabBar <br />
+tabBar的配置在app.json <br />
