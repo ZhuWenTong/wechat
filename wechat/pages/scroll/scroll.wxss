@@ -50,3 +50,25 @@ scroll-view:nth-of-type(2){
     align-items: center;
     color:#fff;
 }
+
+.container{
+    width:100%;
+    height:500px;
+}
+
+.ripple {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    height:10px;
+    width:10px;
+    margin-top: -90px;
+    position: absolute;
+    -webkit-transform: scale(0);
+}
+@-webkit-keyframes ripple {
+    100% {
+    -webkit-transform: scale(10);
+    transform: scale(10);
+    background-color: transparent;
+    }
+}

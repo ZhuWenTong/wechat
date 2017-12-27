@@ -121,3 +121,11 @@ swiper-item text {
     line-height: 30px;
     font-family: '微软雅黑';
 }
+
+@-webkit-keyframes ripple {
+    100% {
+    -webkit-transform: scale(12);
+    transform: scale(12);
+    background-color: transparent;
+    }
+}
