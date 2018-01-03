@@ -1,0 +1,25 @@
+.con-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    position: relative;
+}
+
+.con-header button {
+    margin: 0
+}
+
+.con-header::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 1px;
+    background: #67C23A;
+    top: 100%;
+    left: -50%;
+    transform: scale(0.5);
+}

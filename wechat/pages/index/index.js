@@ -229,6 +229,15 @@ Page({
             })
         }, 300);
     },
+    /**
+     * @date 2018-01-03
+     * @desc 跳转至tabbar.wxml
+     */
+    goTabbar() {
+        wx.navigateTo({
+            url: '../tabbar/tabbar',
+        })
+    },
     onPullDownRefresh() {
 
     },

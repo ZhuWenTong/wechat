@@ -129,3 +129,13 @@ swiper-item text {
     background-color: transparent;
     }
 }
+
+.button-hover {
+    background-color: #f56c6c;
+    color: #fafafa;
+}
+
+.other-button-hover {
+    background-color: #409EFF;
+    color: #fafafa;
+}

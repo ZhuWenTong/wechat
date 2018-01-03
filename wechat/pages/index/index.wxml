@@ -44,4 +44,7 @@
         <text>dataset-name: {{rect.dataset.name}}</text>
         <text>dataset-age: {{rect.dataset.age}}</text>
     </view>
+    <view class='tabbar'>
+        <button size='mini' bindtap='goTabbar'>goTabbar</button>
+    </view>
 </view>
