@@ -1,6 +1,7 @@
 <view class='content'>
     <view class='con-header'>
         <button size='mini' type='primary' bindtap='myPromise' loading='{{loading}}'>promise</button>
+        <text>{{tit}}</text>
         <text>{{val}}</text>
     </view>
 </view>
