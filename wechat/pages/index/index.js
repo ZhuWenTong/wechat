@@ -60,7 +60,7 @@ Page({
                     networkTip: true
                 })
             }
-        })
+        });
     },
     onShow() {
         wx.createSelectorQuery().select('.box').boundingClientRect((rect) => {
@@ -83,7 +83,7 @@ Page({
         });
         this.setData({
             autoplay: true
-        })
+        });
     },
     swiper(event) {
         //console.log(event)
@@ -237,6 +237,37 @@ Page({
         wx.navigateTo({
             url: '../tabbar/tabbar',
         })
+    },
+    /**
+     * TODO 返回顶部
+     */
+    backTop() {
+        wx.pageScrollTo({
+            scrollTop: 0,
+        })
+    },
+    /**
+     * TODO 获取滚动条当前位置
+     */
+    onPageScroll(e) {
+        console.log(e)
+        if(e.scrollTop != 0) {
+            this.setData({
+                topShow: true
+            })
+        } else {
+            this.setData({
+                topShow: false
+            })
+        }
+    },
+    goBottom() {
+        wx.createSelectorQuery().select('.content').boundingClientRect(function (rect) {
+            // 使页面滚动到底部
+            wx.pageScrollTo({
+                scrollTop: rect.bottom
+            })
+        }).exec()
     },
     onPullDownRefresh() {
 

@@ -1,3 +1,4 @@
+@import '../../fonts/iconfont.wxss';
 swiper {
     height: 400rpx;
 }
@@ -138,4 +139,17 @@ swiper-item text {
 .other-button-hover {
     background-color: #409EFF;
     color: #fafafa;
+}
+
+.icon-top,
+.icon-bottom {
+    font-size: 60rpx;
+    position: fixed;
+    right: 10rpx;
+    bottom: 10rpx;
+    color: #13ce66;
+}
+
+.icon-bottom {
+   right: 100rpx;
 }
