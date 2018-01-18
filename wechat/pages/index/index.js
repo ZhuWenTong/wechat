@@ -88,6 +88,9 @@ Page({
     swiper(event) {
         //console.log(event)
     },
+    finish(event) {
+        console.log(event.detail)
+    },
     tabsChange(event) {
         //console.log(event)
         var current = event.detail.current;

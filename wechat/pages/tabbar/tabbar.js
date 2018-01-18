@@ -1,4 +1,5 @@
 import {add, min, multiple, divsion, finish, beAgain} from 'promise.js';
+var common = require('../../common/common.js');
 Page({
     data: {
         val: 10,
@@ -38,6 +39,14 @@ Page({
         p.then(add).then(min).then(multiple).then(divsion).then(finish).then(beAgain).catch(err => console.log(err));
         this.setData({
             loading: true
+        })
+    },
+    startScan() {
+        wx.scanCode({
+            success: (res) => {
+                console.log(res)
+                common.toast(res.result)
+            }
         })
     },
     onReady() {

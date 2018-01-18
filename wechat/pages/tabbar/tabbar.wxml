@@ -4,4 +4,5 @@
         <text>{{tit}}</text>
         <text>{{val}}</text>
     </view>
+    <button size='mini' type='warn' bindtap='startScan'>scan</button>
 </view>

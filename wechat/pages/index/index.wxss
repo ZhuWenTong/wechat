@@ -11,19 +11,19 @@ swiper-item {
     color: #fff;
 }
 
-swiper-item:nth-of-type(3n) {
-    background: #8492a6;
+swiper-item:nth-of-type(4n) {
+    background: #67C23A;
 }
 
-swiper-item:nth-of-type(3n+1) {
+swiper-item:nth-of-type(4n+1) {
     background: #f7ba2a;
 }
 
-swiper-item:nth-of-type(3n+2) {
+swiper-item:nth-of-type(4n+2) {
     background: #1d8ce0;
 }
 
-swiper-item:nth-of-type(3n+3) {
+swiper-item:nth-of-type(4n+3) {
     background: #ff4949;
 }
 
