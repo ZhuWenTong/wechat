@@ -110,72 +110,48 @@ Page({
         setTimeout(() => {
             var hasNetwork = this.data.hasNetwork;
             console.log(hasNetwork)
-            var swiperIndex = event.currentTarget.dataset.swiperIndex,
-                title = event.currentTarget.dataset.title;
-            switch (swiperIndex) {
-                case 0:
-                    if (hasNetwork) {
+            if (!hasNetwork) {
+                common.toastWarn('当前没有网络');
+            } else {
+                var swiperIndex = event.currentTarget.dataset.swiperIndex,
+                    title = event.currentTarget.dataset.title;
+                switch (swiperIndex) {
+                    case 0:
                         wx.navigateTo({
                             url: `../scroll/scroll?title=${title}`,
                         });
-                    } else {
-                        common.toastWarn('当前没有网络');
-                    }
-                    break;
-                case 1:
-                    if (hasNetwork) {
+                        break;
+                    case 1:
                         wx.navigateTo({
                             url: `../form/form?title=${title}`,
                         });
-                    } else {
-                        common.toastWarn('当前没有网络');
-                    }
-                    break;
-                case 2:
-                    if (hasNetwork) {
+                        break;
+                    case 2:
                         wx.navigateTo({
                             url: `../map/map?title=${title}`,
                         });
-                    } else {
-                        common.toastWarn('当前没有网络');
-                    }
-                    break;
-                case 3:
-                    if (hasNetwork) {
+                        break;
+                    case 3:
                         wx.navigateTo({
                             url: `../template/template?title=${title}`,
                         });
-                    } else {
-                        common.toastWarn('当前没有网络');
-                    }
-                    break;
-                case 4:
-                    if (hasNetwork) {
+                        break;
+                    case 4:
                         wx.switchTab({
                             url: `../tabbar/show/show`,
                         });
-                    } else {
-                        common.toastWarn('当前没有网络');
-                    }
-                    break;
-                case 5:
-                    if (hasNetwork) {
+                        break;
+                    case 5:
                         wx.switchTab({
                             url: `../tabbar/info/info`,//wx.switchTab url不支持queryString
                         });
-                    } else {
-                        common.toastWarn('当前没有网络');
-                    }
-                    break;
-                case 6:
-                    if (hasNetwork) {
+                        break;
+                    case 6:
                         wx.navigateTo({
                             url: `../wxcharts/wxcharts?title=${title}`,
                         });
-                    } else {
-                        common.toastWarn('当前没有网络');
-                    }
-                    break;
+                        break;
+                }
             }
         }, 50);
     },
@@ -254,7 +230,7 @@ Page({
      */
     onPageScroll(e) {
         console.log(e)
-        if(e.scrollTop != 0) {
+        if (e.scrollTop != 0) {
             this.setData({
                 topShow: true
             })
