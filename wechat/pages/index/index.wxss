@@ -78,6 +78,25 @@ swiper-item text {
     background: #1f2d3d;
 }
 
+.amount {
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.amount::after {
+    content: '';
+    width: 1000%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    transform: scale(0.1);
+}
+
 .amount view {
     display: flex;
     flex-direction: row;
