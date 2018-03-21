@@ -217,6 +217,11 @@ Page({
             url: '../tabbar/tabbar',
         })
     },
+    goCanvas() {
+        wx.navigateTo({
+            url: '../canvas/canvas',
+        })
+    },
     /**
      * TODO 返回顶部
      */

@@ -46,6 +46,7 @@
     </view>
     <view class='tabbar'>
         <button size='mini' bindtap='goTabbar'>goTabbar</button>
+        <button size='mini' bindtap='goCanvas'>goCanvas</button>
     </view>
     <text class='iconfont icon-top' bindtap='backTop' wx:if='{{topShow}}'></text>
     <text class='iconfont icon-bottom' bindtap='goBottom'></text>
