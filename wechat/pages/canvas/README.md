@@ -1,6 +1,6 @@
 ## Canvas
 canvas绘制饼图 <br />
-import { Charts } from 'charts.js';
+import { Charts } from 'charts.js'; <br />
 new Charts({ <br />
 &nbsp;&nbsp;&nbsp;&nbsp;	canvasId: String, <br />
 &nbsp;&nbsp;&nbsp;&nbsp;	type: String, &nbsp;&nbsp;//仅支持 'pie' <br />
