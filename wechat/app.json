@@ -1,6 +1,6 @@
 {
     "pages": [
-        
+        "pages/canvas/canvas",
         "pages/index/index",
         "pages/scroll/scroll",
         "pages/form/form",
@@ -10,8 +10,8 @@
         "pages/tabbar/info/info",
         "pages/template/template",
         "pages/obj/obj",
-        "pages/wxcharts/wxcharts",
-        "pages/canvas/canvas"
+        "pages/wxcharts/wxcharts"
+        
     ],
     "window": {
         "navigationBarBackgroundColor": "#1D8CE0",

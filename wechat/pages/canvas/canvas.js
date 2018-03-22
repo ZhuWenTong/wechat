@@ -10,23 +10,39 @@ Page({
             series: [{
                 name: 'zhangsan',
                 data: 20,
-                color: '#67C23A'
+            //    color: '#67C23A'
             }, {
                 name: 'lisi',
                 data: 35,
-                color: '#E6A23C'
+            //    color: '#E6A23C'
             }, {
                 name: 'wangwu',
                 data: 40,
-                color: '#F56C6C'
+            //    color: '#F56C6C'
             }, {
                 name: 'maliu',
                 data: 18,
-                color: '#409EFF'
+            //    color: '#409EFF'
             }, {
-                name: 'feiliks',
+                name: 'FEILIKS',
                 data: 50,
-                color: '#909399'
+            //    color: '#909399'
+            }, {
+                name: 'BYD',
+                data: 4,
+                color: 'pink'
+            }, {
+                name: '腾讯',
+                data: 6,
+                color: '#f4f'
+            }, {
+                name: '阿里巴巴',
+                data: 8,
+                color: '#e1e100'
+            }, {
+                name: '百度',
+                data: 10,
+                color: '#6f00d2'
             }],
             r: 100
         })

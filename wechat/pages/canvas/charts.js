@@ -9,7 +9,10 @@
 class Charts {
     constructor(opt) {
         this.opt = opt;
-        console.log(opt)
+        console.log(opt);
+        this.default = {
+            color: ['#67C23A', '#E6A23C', '#F56C6C', '#409EFF', '#909399']
+        };
         this.init();
     }
     init() {
@@ -17,9 +20,9 @@ class Charts {
             ctx = wx.createCanvasContext(opt.canvasId),
             chartsType = opt.type,
             series = opt.series;
-            ctx.setFontSize(20);
-            ctx.setFillStyle('red');
-            ctx.fillText('饼图Canvas', 20, 20);
+            ctx.setFontSize(24);
+            ctx.setStrokeStyle('red');
+            ctx.strokeText('饼图Canvas', 20, 24);
         if (chartsType == 'pie') {
             ctx.arc(180, 125, opt.r, 0, 2 * Math.PI);
             ctx.setFillStyle('#E4E7ED');
@@ -39,27 +42,29 @@ class Charts {
                 i.x = 10;
                 for(var j = 0; j < this.index; j++) {
                     i.sAngle += series[j].angle;
-                    i.x += 70;
+                    i.x = 10 + (this.index % 4) * 90;
                 }
                 for(var j = 0; j <= this.index; j++) {
                     i.eAngle += series[j].angle;
                 }
             })
             console.log(series);
-            series.forEach((i) => {
+            series.forEach((i, index) => {
+                this.index = index;
                 ctx.beginPath();
                 ctx.arc(180, 125, opt.r, i.sAngle, i.eAngle);
-                ctx.setFillStyle(i.color);
+                //ctx.arc(180, 125, opt.r, -i.sAngle, -i.eAngle, true); // 逆时针
+                ctx.setFillStyle(i.color || this.default.color[this.index % 5]);
                 ctx.lineTo(180, 125); //连线回圆心
                 ctx.fill();
                 ctx.beginPath();
-                ctx.setFillStyle(i.color);
-                ctx.rect(i.x, 240, 60, 20);
+                ctx.setFillStyle(i.color || this.default.color[this.index % 5]);
+                ctx.rect(i.x, 240 + Math.floor(index / 4 ) * 40, 80, 20);
                 ctx.fill();
                 ctx.setFontSize(12);
-                ctx.fillText(i.name, i.x, 236);
+                ctx.fillText(i.name, i.x + 10, 236 + Math.floor(index / 4) * 40 );
                 ctx.setFillStyle('#fafafa');
-                ctx.fillText(i.data, i.x + 10, 254);
+                ctx.fillText(`${i.data} (${(i.data * 100 / totalData).toFixed(2)}%)`, i.x + 6, 254 + Math.floor(index / 4) * 40);
             })
         }
         ctx.draw();

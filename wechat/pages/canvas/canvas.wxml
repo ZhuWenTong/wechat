@@ -1,6 +1,6 @@
-<canvas canvas-id='first-canvas' bindtouchstart='start' bindtouchmove='move' bindtouchend='end'></canvas>
+<canvas canvas-id='pie' bindtouchstart='start' bindtouchmove='move' bindtouchend='end'></canvas>
+<canvas canvas-id='first-canvas' bindtouchstart='start' bindtouchmove='move' bindtouchend='end' style='margin-top:30rpx;'></canvas>
 
-<canvas canvas-id='pie' style='margin-top:30rpx;' bindtouchstart='start' bindtouchmove='move' bindtouchend='end'></canvas>
 <view hidden='{{hidden}}'>
     ({{x}}, {{y}})
 </view>
