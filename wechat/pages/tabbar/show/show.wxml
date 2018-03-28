@@ -8,6 +8,7 @@
         <button bindtap="openPdf">openPdf</button>
         <button bindtap="imgInfo">imgInfo</button>
         <button bindtap="chooseImg">chooseImg</button>
+        <button bindtap='scanCode'>scanCode</button>
     </view>
     <view class='btns'>
         <block wx:for='{{btns}}' wx:key=''>

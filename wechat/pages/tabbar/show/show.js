@@ -94,6 +94,13 @@ Page({
             },
         })
     },
+    scanCode() {
+        wx.scanCode({
+            success: (res) => {
+                console.log(res)
+            }
+        })
+    },
     onBtnTap(event) {
         var content = event.currentTarget.dataset.content,
             btns = this.data.btns;
