@@ -1,3 +1,5 @@
 ## template页面
-模板的使用<br />
-字体图标的使用<br />
+1. 模板的使用
+2. 字体图标的使用
+
+![template](https://raw.githubusercontent.com/ZhuWenTong/wechat/master/wechat/images/mdimg/template.png)
