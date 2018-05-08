@@ -14,3 +14,9 @@
 text{
     margin-top: 40rpx;
 }
+
+.avatar {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+}
