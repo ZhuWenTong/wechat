@@ -3,4 +3,4 @@
 2. 交互反馈api的使用
 3. wxs模块的引用
 
-!(show)[https://raw.githubusercontent.com/ZhuWenTong/wechat/master/wechat/images/mdimg/show.png]
+![show](https://raw.githubusercontent.com/ZhuWenTong/wechat/master/wechat/images/mdimg/show.png)
