@@ -1,40 +1,20 @@
-// pages/init/init.js
 Page({
+    data: {
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-  
-  },
+    },
+    onLoad() {
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
+    },
+    onShow() {
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
+    },
     onGetUserInfo(e) {
         console.log(e)
         wx.getSetting({
             success: (res) => {
                 console.log(res)
                 if (!res.authSetting['scope.userInfo']) {
-                    
+
                 } else {
                     console.log('do')
                     wx.setStorageSync('userInfo', JSON.stringify(e.detail.userInfo));
@@ -44,40 +24,12 @@ Page({
                 }
             }
         })
-        
+
     },
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
+    onReady() {
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
+    },
+    onReachBottom() {
+        
+    }
 })
