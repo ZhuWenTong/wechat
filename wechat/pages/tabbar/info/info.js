@@ -4,15 +4,16 @@ Page({
 
     },
     onLoad(options) {
-        wx.getUserInfo({
-            success: (res) => {
-                console.log(res)
-                this.setData({
-                    userInfo: res.userInfo
-                })
-            }
-        });
+        // wx.getUserInfo({
+        //     success: (res) => {
+        //         console.log(res)
+        //         this.setData({
+        //             userInfo: res.userInfo
+        //         })
+        //     }
+        // });
         this.setData({
+            userInfo: JSON.parse(wx.getStorageSync('userInfo')),
             systemInfo: app.systemInfo
         })
     },

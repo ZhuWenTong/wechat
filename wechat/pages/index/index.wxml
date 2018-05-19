@@ -7,13 +7,13 @@
         </block>
     </swiper>
     <view class="tabs">
-        <text bindtap='tabTap' data-current='0' class='{{current  == 0 ? "selected" : ""}}'>1</text>
-        <text bindtap='tabTap' data-current='1' class='{{current  == 1 ? "selected" : ""}}'>2</text>
-        <text bindtap='tabTap' data-current='2' class='{{current  == 2 ? "selected" : ""}}'>3</text>
-        <text bindtap='tabTap' data-current='3' class='{{current  == 3 ? "selected" : ""}}'>4</text>
-        <text bindtap='tabTap' data-current='4' class='{{current  == 4 ? "selected" : ""}}'>5</text>
-        <text bindtap='tabTap' data-current='5' class='{{current  == 5 ? "selected" : ""}}'>6</text>
-        <text bindtap='tabTap' data-current='6' class='{{current  == 6 ? "selected" : ""}}'>7</text>
+        <text bindtap='tabTap' data-current='0' class='{{current == 0 ? "selected" : ""}}'>1</text>
+        <text bindtap='tabTap' data-current='1' class='{{current == 1 ? "selected" : ""}}'>2</text>
+        <text bindtap='tabTap' data-current='2' class='{{current == 2 ? "selected" : ""}}'>3</text>
+        <text bindtap='tabTap' data-current='3' class='{{current == 3 ? "selected" : ""}}'>4</text>
+        <text bindtap='tabTap' data-current='4' class='{{current == 4 ? "selected" : ""}}'>5</text>
+        <text bindtap='tabTap' data-current='5' class='{{current == 5 ? "selected" : ""}}'>6</text>
+        <text bindtap='tabTap' data-current='6' class='{{current == 6 ? "selected" : ""}}'>7</text>
     </view>
     <swiper class="tabs-content" bindchange="tabsChange" current="{{current}}" autoplay='{{autoplay}}' interval="3000" circular bindanimationfinish='finish'>
         <block wx:for="{{wxdemo}}" wx:key="">
