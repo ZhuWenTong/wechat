@@ -1,3 +1,4 @@
 {
-    "navigationBarTitleText": "index"
+    "navigationBarTitleText": "index",
+    "navigationStyle": "custom"
 }
