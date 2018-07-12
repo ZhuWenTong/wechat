@@ -10,13 +10,18 @@ Page({
         }, {
             content: 'item3',
             select: false
-        }]
+        }],
+        waitshow: true
     },
     onLoad(options) {
 
     },
     onShow() {
-    
+        setTimeout(() => {
+            this.setData({
+                waitshow: false
+            })
+        }, 1000);
     },
     onReady() {
 

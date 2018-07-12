@@ -1,0 +1,15 @@
+<template name='wait'>
+    <view class='wrap-waiting'>
+        <view class='waiting'>
+            <view class='cir'>
+                <view></view>
+            </view>
+            <view class='cir'>
+                <view></view>
+            </view>
+            <view class='cir'>
+                <view></view>
+            </view>
+        </view>
+    </view>
+</template>
