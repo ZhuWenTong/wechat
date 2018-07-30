@@ -15,7 +15,7 @@
                 已完成
             </view>
             <view slot="content">
-                这里是该步骤的描述信息
+               描述信息
             </view>
         </i-step>
         <i-step>
@@ -23,7 +23,7 @@
                 进行中
             </view>
             <view slot="content">
-                这里是该步骤的描述信息
+                描述信息
             </view>
         </i-step>
         <i-step>
@@ -31,17 +31,18 @@
                 错误
             </view>
             <view slot="content">
-                这里是该步骤的描述信息
+                描述信息
             </view>
         </i-step>
     </i-steps>
+    <i-divider color="#2d8cf0" lineColor="#2d8cf0">steps1</i-divider>
     <i-steps current="{{current}}" direction="vertical">
         <i-step icon="barrage">
             <view slot="title">
                 已完成
             </view>
             <view slot="content">
-                这里是该步骤的描述信息
+                描述信息
             </view>
         </i-step>
         <i-step icon="brush">
@@ -49,7 +50,7 @@
                 进行中
             </view>
             <view slot="content">
-                这里是该步骤的描述信息
+                描述信息
             </view>
         </i-step>
         <i-step icon="collection">
@@ -57,7 +58,7 @@
                 错误
             </view>
             <view slot="content">
-                这里是该步骤的描述信息
+                描述信息
             </view>
         </i-step>
     </i-steps>
