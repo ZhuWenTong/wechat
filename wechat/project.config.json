@@ -8,7 +8,11 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
+<<<<<<< HEAD
 	"libVersion": "2.0.4",
+=======
+	"libVersion": "2.1.0",
+>>>>>>> 4617cca2887e05180d56a48c81fc0ce61c722260
 	"appid": "wx9353c8c81e5dee45",
 	"projectname": "wechat_demo",
 	"condition": {

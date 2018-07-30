@@ -1,5 +1,6 @@
 <wxs src='wxs/show-demo.wxs' module='wxsShow' />
 <wxs src='wxs/show-require.wxs' module='wxsRequire' />
+<import src='../../templates/waiting/wait-template.wxml' />
 <view class="content">
     <view class="btn">
         <button bindtap="onToastTap">showToast</button>
@@ -30,4 +31,5 @@
         <text>{{wxsRequire.obj.speak('zwt')}}</text>
         <text>{{wxsRequire.obj.msg}}</text>
     </view>
+    <template is='wait' wx:if='{{waitshow}}'/>
 </view>

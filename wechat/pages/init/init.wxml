@@ -1,0 +1,3 @@
+<view class='content'>
+    <button open-type='getUserInfo' bindgetuserinfo='onGetUserInfo'>开始</button>
+</view>
