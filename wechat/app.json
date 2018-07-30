@@ -1,6 +1,6 @@
 {
     "pages": [
-        
+        "pages/iview/iview",
         "pages/index/index",
         "pages/scroll/scroll",
         "pages/form/form",
@@ -15,9 +15,9 @@
         
     ],
     "window": {
-        "navigationBarBackgroundColor": "#1D8CE0",
-        "navigationBarTextStyle": "white",
-        "backgroundColor": "#eeeeee",
+        "navigationBarBackgroundColor": "#2d8cf0",
+        "navigationBarTextStyle": "#FAFAFA",
+        "backgroundColor": "#e8eaec",
         "backgroundTextStyle": "light",
         "enablePullDownRefresh": false
     },
@@ -28,6 +28,12 @@
                 "text": "index",
                 "iconPath": "/images/index0.png",
                 "selectedIconPath": "/images/index.png"
+            },
+            {
+                "pagePath": "pages/iview/iview",
+                "text": "iview",
+                "iconPath": "/images/iview0.png",
+                "selectedIconPath": "/images/iview.png"
             },
             {
                 "pagePath": "pages/tabbar/show/show",
@@ -43,8 +49,8 @@
             }
         ],
         "borderStyle": "white",
-        "selectedColor": "#1296db",
-        "backgroundColor": "#324057",
-        "color": "#fff"
+        "selectedColor": "#2d8cf0",
+        "backgroundColor": "#515a6e",
+        "color": "#FAFAFA"
     }
 }

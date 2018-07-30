@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "iview组件",
+    "usingComponents": {
+        "i-steps": "../../dist/steps/index",
+        "i-step": "../../dist/step/index",
+        "i-divider": "../../dist/divider/index",
+        "i-button": "../../dist/button/index"
+    }
+}

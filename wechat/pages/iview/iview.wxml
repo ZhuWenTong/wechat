@@ -1,0 +1,66 @@
+<view>
+    <i-button type='primary' size='large'>primary-large</i-button>
+    <i-button type='primary' size='default'>primary-default</i-button>
+    <i-button type='primary' size='small' long>primary-small</i-button>
+    <i-button type='primary' inline shape='circle'>primary</i-button>
+    <i-button type='success' inline>success</i-button>
+    <i-button type='warning' inline>warning</i-button>
+    <i-button type='info' inline loading>info</i-button>
+    <i-button type='error' inline disabled>error</i-button>
+    <i-button type='ghost' inline>ghost</i-button>
+    <i-divider color="#2d8cf0" lineColor="#2d8cf0">button</i-divider>
+    <i-steps current="{{current}}">
+        <i-step>
+            <view slot="title">
+                已完成
+            </view>
+            <view slot="content">
+                这里是该步骤的描述信息
+            </view>
+        </i-step>
+        <i-step>
+            <view slot="title">
+                进行中
+            </view>
+            <view slot="content">
+                这里是该步骤的描述信息
+            </view>
+        </i-step>
+        <i-step>
+            <view slot="title">
+                错误
+            </view>
+            <view slot="content">
+                这里是该步骤的描述信息
+            </view>
+        </i-step>
+    </i-steps>
+    <i-steps current="{{current}}" direction="vertical">
+        <i-step icon="barrage">
+            <view slot="title">
+                已完成
+            </view>
+            <view slot="content">
+                这里是该步骤的描述信息
+            </view>
+        </i-step>
+        <i-step icon="brush">
+            <view slot="title">
+                进行中
+            </view>
+            <view slot="content">
+                这里是该步骤的描述信息
+            </view>
+        </i-step>
+        <i-step icon="collection">
+            <view slot="title">
+                错误
+            </view>
+            <view slot="content">
+                这里是该步骤的描述信息
+            </view>
+        </i-step>
+    </i-steps>
+    <i-button bindclick="handleClick">下一步</i-button>
+    <i-divider color="#2d8cf0" lineColor="#2d8cf0">steps</i-divider>
+</view>
