@@ -1,10 +1,7 @@
 {
     "pages": [
-<<<<<<< HEAD
-        "pages/iview/iview",
-=======
+        
         "pages/init/init",
->>>>>>> 4617cca2887e05180d56a48c81fc0ce61c722260
         "pages/index/index",
         "pages/scroll/scroll",
         "pages/form/form",
@@ -15,8 +12,8 @@
         "pages/template/template",
         "pages/obj/obj",
         "pages/canvas/canvas",
-        "pages/wxcharts/wxcharts"
-        
+        "pages/wxcharts/wxcharts",
+        "pages/iview/iview"
     ],
     "window": {
         "navigationBarBackgroundColor": "#2d8cf0",
