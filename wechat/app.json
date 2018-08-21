@@ -1,6 +1,5 @@
 {
     "pages": [
-        
         "pages/init/init",
         "pages/index/index",
         "pages/scroll/scroll",
