@@ -1,12 +1,12 @@
 {
     "pages": [
-        
+        "pages/tabbar/tabbar",
         "pages/init/init",
         "pages/index/index",
         "pages/scroll/scroll",
         "pages/form/form",
         "pages/map/map",
-        "pages/tabbar/tabbar",
+        
         "pages/tabbar/show/show",
         "pages/tabbar/info/info",
         "pages/template/template",

@@ -5,4 +5,6 @@
         <text>{{val}}</text>
     </view>
     <button size='mini' type='warn' bindtap='startScan'>scan</button>
+    <i-divider color="#2d8cf0" lineColor="#2d8cf0">异步处理async await</i-divider>
+    <i-button type='primary' bindtap='handleAsync' loading='{{iBtnLoading}}'>START</i-button>
 </view>
