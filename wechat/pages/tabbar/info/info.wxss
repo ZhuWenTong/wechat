@@ -1,8 +1,12 @@
-.content{
+.content,.userinfo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.userinfo button {
+    margin-top: 100rpx;
 }
 .content image{
     width:200rpx;
