@@ -1,9 +1,11 @@
 ## 处理异步
 1. promise
 ```
-	new Promise((resolve, reject) => {
-		resolve(obj)
-	}).then(fn1).then(fn2).catch(err => console.log(err));
+	do() { //调用do
+		new Promise((resolve, reject) => {
+			resolve(obj)
+		}).then(this.fn1).then(this.fn2).catch(err => console.log(err));
+	}
 	fn1(obj) {
 		return new Promise((resolve, reject) => {
 			// code
