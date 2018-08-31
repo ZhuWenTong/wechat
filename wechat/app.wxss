@@ -3,6 +3,6 @@ page{
 }
 text{
     font-family: '微软雅黑';
-    font-size: 14px;
+    font-size: 28rpx;
     color: #333;
 }

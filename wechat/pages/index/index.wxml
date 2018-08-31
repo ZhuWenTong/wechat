@@ -45,8 +45,8 @@
         <text>dataset-age: {{rect.dataset.age}}</text>
     </view>
     <view class='tabbar'>
-        <button size='mini' bindtap='goTabbar'>goTabbar</button>
-        <button size='mini' bindtap='goCanvas'>goCanvas</button>
+        <button bindtap='goTabbar'>goTabbar</button>
+        <button bindtap='goCanvas'>goCanvas</button>
         <!-- <button open-type='getUserInfo'></button> -->
     </view>
     <text class='iconfont icon-top' bindtap='backTop' wx:if='{{topShow}}'></text>

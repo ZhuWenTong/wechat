@@ -21,7 +21,7 @@ Page({
             this.setData({
                 waitshow: false
             })
-        }, 1000);
+        }, 2000);
     },
     onReady() {
 
@@ -129,5 +129,10 @@ Page({
     },
     onReachBottom() {
 
+    },
+    onHide() {
+        this.setData({
+            waitshow: true
+        })
     }
 })

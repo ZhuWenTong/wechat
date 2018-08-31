@@ -29,6 +29,7 @@ swiper-item:nth-of-type(4n+3) {
 
 swiper-item text {
     color: #fff;
+    font-size: 60rpx;
 }
 
 .tabs {
@@ -52,6 +53,7 @@ swiper-item text {
     border-right: 1px solid #ccc;
     box-sizing: border-box;
     color: #fff;
+    font-size: 30rpx;
 }
 
 .tabs text:last-child {
@@ -110,6 +112,7 @@ swiper-item text {
     text-align: center;
     line-height: 80rpx;
     border: 1px solid #ccc;
+    font-size: 30rpx;
 }
 
 .amount view input {
@@ -136,9 +139,9 @@ swiper-item text {
 }
 
 .box text {
-    font-size: 14px;
+    font-size: 28rpx;
     color: #fff;
-    line-height: 30px;
+    line-height: 60rpx;
     font-family: '微软雅黑';
 }
 

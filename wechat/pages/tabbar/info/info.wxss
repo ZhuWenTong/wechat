@@ -7,6 +7,14 @@
 
 .userinfo button {
     margin-top: 100rpx;
+    background: none;
+    border: none;
+    border: 1px solid #ccc;
+    width: 200rpx;
+    height: 200rpx;
+    text-align: center;
+    line-height: 200rpx;
+    border-radius: 50%;
 }
 .content image{
     width:200rpx;
@@ -17,6 +25,7 @@
 
 text{
     margin-top: 40rpx;
+    font-size: 20rpx;
 }
 
 .avatar {
