@@ -1,4 +1,4 @@
 <template name='sonTemplate'>
     <!--字体图标类-->
-    <text class='icon iconfont icon-star' style='color:#f2e835;font-size:20px;'></text>
+    <text class='icon iconfont icon-star' style='color:#f2e835;font-size:40rpx;'></text>
 </template>

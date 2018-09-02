@@ -11,4 +11,5 @@
 
 .common text{
     color:#fff;
+    font-size: 20rpx;
 }

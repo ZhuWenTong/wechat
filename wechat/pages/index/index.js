@@ -89,7 +89,7 @@ Page({
         //console.log(event)
     },
     finish(event) {
-        console.log(event.detail)
+        //console.log(event.detail)
     },
     tabsChange(event) {
         //console.log(event)

@@ -15,4 +15,5 @@
     line-height: 80rpx;
     background: #fff;
     border-radius: 10rpx;
+    font-size: 20rpx;
 }
