@@ -17,7 +17,10 @@ Page({
 
     },
     onShow() {
-        setTimeout(() => {
+        this.setData({
+            waitshow: true
+        })
+        this.timer = setTimeout(() => {
             this.setData({
                 waitshow: false
             })
@@ -132,7 +135,8 @@ Page({
     },
     onHide() {
         this.setData({
-            waitshow: true
+            waitshow: false
         })
+        clearTimeout(this.timer);
     }
 })
