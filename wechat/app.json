@@ -51,5 +51,6 @@
         "selectedColor": "#2d8cf0",
         "backgroundColor": "#515a6e",
         "color": "#FAFAFA"
-    }
+    },
+    "sitemapLocation": "sitemap.json"
 }
